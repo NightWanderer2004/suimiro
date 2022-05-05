@@ -1,0 +1,14 @@
+{
+  "name": "simple-blog",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "author": "NightWandeder2004",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.5.0",
+    "postcss": "^8.4.13",
+    "tailwindcss": "^3.0.24"
+  }
+}
