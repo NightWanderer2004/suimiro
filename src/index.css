@@ -8,3 +8,6 @@
 .headerText {
    @apply text-center text-lg font-semibold mt-5;
 }
+.newText {
+   @apply text-center text-lg font-normal mt-8;
+}
