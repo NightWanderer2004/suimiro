@@ -6,6 +6,12 @@
 
 ---
 
+Сыллка на расширения **[editorconfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)** для vsCode;
+
+Ссылка на расширение **[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)** для vsCode;
+
+---
+
 -Все правила стиля кода описаны в конфигах:
 
 -  **[.editorconfig]**
