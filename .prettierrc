@@ -1,5 +1,7 @@
 {
    "files": "*.js",
-   "semi": false,
-   "singleQuote": true
+   "options": {
+      "semi": false,
+      "singleQuote": true
+   }
 }
