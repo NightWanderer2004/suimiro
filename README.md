@@ -19,7 +19,7 @@
 -  **[.editorconfig]**
 -  **[.prettierrc]**
 
--Сайт сделан на движке [eleventy](https://www.11ty.dev/)
+-Сайт сделан на движке **[eleventy](https://www.11ty.dev/)**
 
 -Для CSS используем **[tailwindCSS](https://tailwindcss.com/)**
 
