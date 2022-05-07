@@ -1,5 +1,4 @@
 module.exports = (config) => {
-   config.addPassthroughCopy('./src/styles/output.css')
    config.addPassthroughCopy('./src/scripts')
    return {
       dir: {
