@@ -23,6 +23,4 @@
 
 -Для CSS используем **[tailwindCSS](https://tailwindcss.com/)**
 
--Редактировать
-
 -Имена классам даём в стиле **camelCase**
