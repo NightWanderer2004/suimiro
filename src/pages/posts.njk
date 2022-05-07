@@ -1,0 +1,14 @@
+---
+layout: page.njk
+permalink: 'posts/'
+---
+
+<h1 class="title">Страница постов</h1>
+
+{% for el in collections.posts%}
+<ul class="postsList">
+   <li>
+      <a href="{{ el.url }}">{{ el.data.title }}</a>
+   </li>
+</ul>
+{% endfor %}

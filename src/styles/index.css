@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+   @apply tracking-wider text-[#222];
+}
+
+.wrapper {
+   @apply min-h-screen overflow-hidden flex flex-col;
+}
+/* навбар */
+.navbar {
+   @apply border-b-2 border-blue-400 py-4 md:py-6 px-3;
+}
+.navbarContent {
+   @apply flex items-center;
+}
+.navbarContent .logo {
+   @apply font-bold text-2xl;
+}
+/* .navbarContent .logo span {
+   @apply text-blue-400;
+} */
+/* главная страница */
+.main {
+   @apply container mx-auto py-4 md:py-6 px-3 flex-1;
+}
+.main .title {
+   @apply font-bold text-3xl lg:text-4xl mb-6 lg:mb-10;
+}
+.main .postsLink {
+   @apply text-slate-600 font-medium text-lg lg:text-xl;
+}
+/* страница постов */
+.main .postsList li a {
+   @apply text-slate-600 font-medium text-lg lg:text-xl;
+}
+/* страница отдельного поста */
+.main p a {
+   @apply font-bold text-slate-600;
+}
+.main h3 {
+   @apply text-4xl lg:text-5xl font-bold my-5;
+}
+.main h3 + p {
+   @apply font-medium pl-5;
+}
+/* футер */
+.footer {
+   @apply py-5 px-3 border-t-2 border-blue-400;
+}

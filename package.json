@@ -1,14 +1,14 @@
 {
   "name": "simple-blog",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "start": "eleventy --serve & npm run tailwind",
+    "build": "rm -rf dist && eleventy && npx tailwindcss -i ./src/styles/index.css -o ./src/styles/output.css",
+    "tailwind": "npx tailwindcss -i ./src/styles/index.css -o ./src/styles/output.css --watch --minify"
   },
   "author": "NightWandeder2004",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.5.0",
-    "postcss": "^8.4.13",
+    "@11ty/eleventy": "^1.0.1",
     "tailwindcss": "^3.0.24"
   }
 }
