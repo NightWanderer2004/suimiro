@@ -2,8 +2,8 @@
   "name": "simple-blog",
   "scripts": {
     "start": "eleventy --serve & npm run tailwind",
-    "build": "rm -rf dist && eleventy && npx tailwindcss -i ./src/styles/index.css -o ./src/styles/output.css",
-    "tailwind": "npx tailwindcss -i ./src/styles/index.css -o ./src/styles/output.css --watch --minify"
+    "build": "rm -rf dist && eleventy && npx tailwindcss -i ./src/styles/index.css -o ./dist/styles/index.css",
+    "tailwind": "npx tailwindcss -i ./src/styles/index.css -o ./dist/styles/index.css --watch --minify"
   },
   "author": "NightWandeder2004",
   "license": "ISC",
