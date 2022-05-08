@@ -6,14 +6,6 @@
 
 ---
 
-Сыллка на расширения **[editorconfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)** для vsCode;
-
-Ссылка на расширение **[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)** для vsCode;
-
-Ссылка на рассширение для подсказок **[TailwindCSS](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)** для vsCode;
-
----
-
 -Все правила стиля кода описаны в конфигах:
 
 -  **[.editorconfig]**
@@ -24,3 +16,15 @@
 -Для CSS используем **[tailwindCSS](https://tailwindcss.com/)**
 
 -Имена классам даём в стиле **camelCase**
+
+---
+
+### Ссылки на расширения для vsCode:
+
+-  **[editorconfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)**;
+
+-  **[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)**;
+
+-  Подсказки для **[TailwindCSS](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)**;
+
+-  Подсветка синтаксиса **[Nunjucks](https://marketplace.visualstudio.com/items?itemName=ronnidc.nunjucks)**;
