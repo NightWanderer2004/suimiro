@@ -1,52 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body,
+html {
+   @apply scroll-smooth;
+}
 body {
-   @apply tracking-wider text-[#222];
+   @apply tracking-wider text-main font-inter;
 }
 
 .wrapper {
    @apply min-h-screen overflow-hidden flex flex-col;
 }
+
 /* навбар */
 .navbar {
-   @apply border-b-2 border-blue-400 py-4 md:py-6 px-3;
-}
-.navbarContent {
-   @apply flex items-center;
+   @apply bg-main h-16 md:h-20 px-3 flex items-center;
 }
 .navbarContent .logo {
-   @apply font-bold text-2xl;
+   @apply font-bold text-2xl text-white;
 }
-/* .navbarContent .logo span {
-   @apply text-blue-400;
-} */
 /* главная страница */
 .main {
-   @apply container mx-auto py-4 md:py-6 px-3 flex-1;
+   @apply container mx-auto py-6 md:py-8 px-3 flex-1;
 }
 .main .title {
-   @apply font-bold text-3xl lg:text-4xl mb-6 lg:mb-10;
+   @apply font-bold text-3xl lg:text-4xl mb-4 lg:mb-10;
 }
-.main .postsLink {
-   @apply text-slate-600 font-medium text-lg lg:text-xl;
+/* фид */
+.feed {
+   @apply grid grid-flow-row gap-y-5;
 }
-/* страница постов */
-.main .postsList li a {
-   @apply text-slate-600 font-medium text-lg lg:text-xl;
+/* пост */
+.post {
+   @apply bg-main p-2;
 }
-/* страница отдельного поста */
-.main p a {
-   @apply font-bold text-slate-600;
+.post:hover .postTitle {
+   @apply underline underline-offset-2;
 }
-.main h3 {
-   @apply text-4xl lg:text-5xl font-bold my-5;
+.postTitle {
+   @apply font-semibold text-3xl text-white tracking-tight;
 }
-.main h3 + p {
-   @apply font-medium pl-5;
+.postDate {
+   @apply opacity-90 mt-3 mb-1 text-xs;
+}
+.postAuthor {
+   @apply block text-white/80 font-medium text-xs;
+}
+.postAuthor span {
+   @apply text-white font-semibold text-sm;
+}
+.postDate,
+.postAuthor {
+   @apply text-white text-right;
 }
 /* футер */
 .footer {
-   @apply py-5 px-3 border-t-2 border-blue-400;
+   @apply h-16 md:h-20 px-3 bg-main text-white;
 }
