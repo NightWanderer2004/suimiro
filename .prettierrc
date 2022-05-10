@@ -1,7 +1,11 @@
 {
-   "files": "*.js",
-   "options": {
-      "semi": false,
-      "singleQuote": true
-   }
+   "overrides": [
+      {
+         "files": "*.js",
+         "options": {
+            "semi": false,
+            "singleQuote": true
+         }
+      }
+   ]
 }
