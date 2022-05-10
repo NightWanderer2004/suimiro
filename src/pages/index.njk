@@ -1,8 +1,28 @@
 ---
 layout: page.njk
-pageTitle: 'Главная'
+pageTitle: Главная
 permalink: index.html
 ---
 
-<h1 class="title">Главная страница</h1>
-<a class="postsLink" href="/posts">Посты</a>
+{% set posts = collections.posts.reverse() | limit(3) %}
+
+<h2 class="title">Главная</h2>
+<div class="feed">
+   {% for post in posts %}
+   <a href="{{ post.url }}" class="post">
+      <h3 class="postTitle">{{ post.data.title }}</h3>
+      <p class="postDate">
+         {{
+            post.data.date.toLocaleDateString("ru", {
+               year: "numeric",
+               month: "long",
+               day: "numeric"
+            })
+         }}
+      </p>
+      <p class="postAuthor">
+         автор: <span>{{ post.data.author }}</span>
+      </p>
+   </a>
+   {% endfor %}
+</div>
