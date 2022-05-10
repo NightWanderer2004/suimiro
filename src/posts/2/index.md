@@ -1,7 +1,7 @@
 ---
-title: Разрабатываем свой блог
-date: 2022-05-08
-author: Валерий
+title: Используем API в JS
+date: 2022-01-04
+author: Эдуард
 pageTitle: Пост
 ---
 

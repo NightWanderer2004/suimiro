@@ -1,7 +1,7 @@
 ---
-title: Разрабатываем свой блог
-date: 2022-05-08
-author: Валерий
+title: Движок 11ty/eleventy
+date: 2022-04-17
+author: Эдуард
 pageTitle: Пост
 ---
 
