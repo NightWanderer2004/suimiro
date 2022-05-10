@@ -1,3 +1,3 @@
 module.exports = {
-   logo: 'Simple-БЛОГ',
+   logo: 'Лого',
 }
