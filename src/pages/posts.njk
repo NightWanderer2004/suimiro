@@ -1,12 +1,12 @@
 ---
 layout: page.njk
 pageTitle: Посты
-permalink: 'posts/'
+permalink: "posts/"
 ---
 
-<h1 class="title">Страница постов</h1>
+<h1 class="title">Посты</h1>
 
-{% for el in collections.posts%}
+{% for el in collections.posts %}
 <ul class="postsList">
    <li>
       <a href="{{ el.url }}">{{ el.data.title }}</a>
