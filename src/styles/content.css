@@ -1,0 +1,70 @@
+.post,
+.hint {
+   @apply text-dark flex p-2 flex-col;
+}
+.post {
+   @apply bg-primary md:py-4;
+}
+.hint {
+   @apply bg-secondary text-white md:py-2;
+}
+.post:first-child {
+   @apply md:row-span-full;
+}
+.post:first-child .postPreview {
+   @apply md:block flex-1 mt-3 font-medium text-lg;
+}
+.post:hover .postTitle,
+.hint:hover .hintTitle {
+   @apply underline underline-offset-4;
+}
+.postTitle,
+.hintTitle {
+   @apply font-medium tracking-tight;
+}
+.postTitle {
+   @apply text-3xl md:text-4xl;
+}
+.hintTitle {
+   @apply text-xl md:text-2xl;
+}
+.postPreview,
+.hintPreview {
+   @apply hidden;
+}
+.postDate,
+.hintDate {
+   @apply opacity-90;
+}
+.postDate {
+   @apply mt-3 md:mt-5;
+}
+.hintDate {
+   @apply mt-2 md:mt-4;
+}
+.postDate,
+.postAuthor {
+   @apply text-sm md:text-base;
+}
+.hintDate,
+.hintAuthor {
+   @apply text-xs md:text-sm;
+}
+.postAuthor span,
+.hintAuthor span {
+   @apply font-semibold;
+}
+.postAuthor span {
+   @apply text-base md:text-lg;
+}
+.hintAuthor span {
+   @apply text-sm md:text-base;
+}
+.postDate,
+.postAuthor {
+   @apply text-right md:text-left font-medium;
+}
+.hintDate,
+.hintAuthor {
+   @apply font-medium;
+}

@@ -1,0 +1,6 @@
+.footer {
+   @apply h-16 md:h-20 px-3 border-t-2 border-dark text-white flex items-center;
+}
+.footerContent {
+   @apply container mx-auto text-dark font-semibold;
+}

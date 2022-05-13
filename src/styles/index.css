@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+@import "./navbar.css";
+@import "./page.css";
+@import "./feed.css";
+@import "./content.css";
+@import "./footer.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,129 +17,6 @@ html {
 body {
    @apply tracking-wider text-dark font-inter;
 }
-
 .wrapper {
    @apply min-h-screen overflow-hidden flex flex-col;
-}
-/* навбар */
-.navbar {
-   @apply border-b-2 border-dark h-16 md:h-20 px-3 flex items-center;
-}
-.navbarContent {
-   @apply container mx-auto flex justify-between md:justify-start items-center md:gap-x-8 w-full;
-}
-.navLinks {
-   @apply flex items-center gap-x-3;
-}
-.navLink {
-   @apply text-dark text-base font-medium md:font-semibold;
-}
-.logo {
-   @apply font-bold text-2xl md:text-3xl text-dark;
-}
-/* главная страница */
-.main {
-   @apply container mx-auto py-6 md:py-8 px-3 flex-1;
-}
-.main .title {
-   @apply mb-4 md:mb-10 font-bold text-dark text-3xl md:text-4xl;
-}
-/* фид */
-.posts,
-.hints {
-   @apply my-6;
-}
-.posts .feed,
-.hints .feed {
-   @apply mb-1 md:mb-3 grid grid-flow-row gap-y-4 md:gap-y-3 md:gap-x-3;
-}
-.posts .feed {
-   @apply md:grid-cols-2 md:grid-rows-2;
-}
-.hints .feed {
-   @apply md:grid-cols-2 md:grid-rows-1;
-}
-.feedTitle {
-   @apply font-semibold text-2xl mb-2;
-}
-.allLink {
-   @apply text-dark font-semibold text-lg text-center hover:underline;
-}
-/* пост & совет */
-.post,
-.hint {
-   @apply text-dark flex p-2 flex-col;
-}
-.post {
-   @apply bg-primary md:py-4;
-}
-.hint {
-   @apply bg-secondary text-white md:py-2;
-}
-.post:first-child {
-   @apply md:row-span-full;
-}
-.post:first-child .postPreview {
-   @apply md:block flex-1 mt-3 font-medium text-lg;
-}
-.post:hover .postTitle,
-.hint:hover .hintTitle {
-   @apply underline underline-offset-4;
-}
-.postTitle,
-.hintTitle {
-   @apply font-medium tracking-tight;
-}
-.postTitle {
-   @apply text-3xl md:text-4xl;
-}
-.hintTitle {
-   @apply text-xl md:text-2xl;
-}
-.postPreview,
-.hintPreview {
-   @apply hidden;
-}
-.postDate,
-.hintDate {
-   @apply opacity-90;
-}
-.postDate {
-   @apply mt-3 md:mt-5;
-}
-.hintDate {
-   @apply mt-2 md:mt-4;
-}
-.postDate,
-.postAuthor {
-   @apply text-sm md:text-base;
-}
-.hintDate,
-.hintAuthor {
-   @apply text-xs md:text-sm;
-}
-.postAuthor span,
-.hintAuthor span {
-   @apply font-semibold;
-}
-.postAuthor span {
-   @apply text-base md:text-lg;
-}
-.hintAuthor span {
-   @apply text-sm md:text-base;
-}
-.postDate,
-.postAuthor {
-   @apply text-right md:text-left font-medium;
-}
-.hintDate,
-.hintAuthor {
-   @apply font-medium;
-}
-/* футер */
-.footer {
-   @apply h-16 md:h-20 px-3 border-t-2 border-dark text-white flex items-center;
-}
-.footerContent {
-   @apply container mx-auto text-dark font-semibold;
 }

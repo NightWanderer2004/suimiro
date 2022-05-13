@@ -1,0 +1,20 @@
+.posts,
+.hints {
+   @apply my-6;
+}
+.posts .feed,
+.hints .feed {
+   @apply mb-1 md:mb-3 grid grid-flow-row gap-y-4 md:gap-y-3 md:gap-x-3;
+}
+.posts .feed {
+   @apply md:grid-cols-2 md:grid-rows-2;
+}
+.hints .feed {
+   @apply md:grid-cols-2 md:grid-rows-1;
+}
+.feedTitle {
+   @apply font-semibold text-2xl mb-2;
+}
+.allLink {
+   @apply text-dark font-semibold text-lg text-center hover:underline;
+}
