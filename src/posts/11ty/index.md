@@ -2,11 +2,11 @@
 title: Движок 11ty/eleventy
 date: 2022-04-17
 author: Эдуард
-pageTitle: Пост
+pageTitle: Пост - Simple-блог
 ---
 
 [На главную](/)
 
-### Заголовок поста
+### {{ title }}
 
 текст поста
