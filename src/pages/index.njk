@@ -4,25 +4,55 @@ pageTitle: Главная
 permalink: index.html
 ---
 
-{% set posts = collections.posts.reverse() | limit(3) %}
+{% set posts = collections.posts.reverse() | limit(3) %} {% set hints =
+collections.hints.reverse() | limit(3) %}
 
 <h2 class="title">Главная</h2>
-<div class="feed">
-   {% for post in posts %}
-   <a href="{{ post.url }}" class="post">
-      <h3 class="postTitle">{{ post.data.title }}</h3>
-      <p class="postDate">
-         {{
-            post.data.date.toLocaleDateString("ru", {
-               year: "numeric",
-               month: "long",
-               day: "numeric"
-            })
-         }}
-      </p>
-      <p class="postAuthor">
-         автор: <span>{{ post.data.author }}</span>
-      </p>
-   </a>
-   {% endfor %}
+<div class="posts">
+   <h3 class="feedTitle">Посты:</h3>
+   <div class="feed">
+      {% for post in posts %}
+      <a href="{{ post.url }}" class="post">
+         <h3 class="postTitle">{{ post.data.title }}</h3>
+         <p class="postPreview">{{ post.data.preview }}</p>
+         <p class="postDate">
+            {{
+               post.data.date.toLocaleDateString("ru", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric"
+               })
+            }}
+         </p>
+         <p class="postAuthor">
+            автор: <span>{{ post.data.author }}</span>
+         </p>
+      </a>
+      {% endfor %}
+   </div>
+   <a class="allLink" href="/posts">Показать все</a>
+</div>
+<div class="hints">
+   <h3 class="feedTitle">Советы:</h3>
+   <div class="feed">
+      {% for hint in hints %}
+      <a href="{{ hint.url }}" class="hint">
+         <h3 class="hintTitle">{{ hint.data.title }}</h3>
+         <p class="hintPreview">{{ hint.data.preview }}</p>
+         <p class="hintDate">
+            {{
+               hint.data.date.toLocaleDateString("ru", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric"
+               })
+            }}
+         </p>
+         <p class="hintAuthor">
+            автор: <span>{{ hint.data.author }}</span>
+         </p>
+      </a>
+      {% endfor %}
+   </div>
+   <a class="allLink" href="/hints">Показать все</a>
 </div>

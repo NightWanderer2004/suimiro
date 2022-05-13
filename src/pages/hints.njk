@@ -1,0 +1,15 @@
+---
+layout: page.njk
+pageTitle: Советы
+permalink: "hints/"
+---
+
+<h1 class="title">{{ pageTitle }}</h1>
+
+{% for hint in collections.hints%}
+<ul class="postsList">
+   <li>
+      <a href="{{ hint.url }}">{{ hint.data.title }}</a>
+   </li>
+</ul>
+{% endfor %}
