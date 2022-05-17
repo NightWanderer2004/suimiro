@@ -1,8 +1,8 @@
 .navbar {
-   @apply border-b-2 border-dark h-16 md:h-20 px-3 flex items-center;
+   @apply border-b-2 border-dark h-16 md:h-20 flex items-center;
 }
 .navbarContent {
-   @apply container mx-auto flex justify-between md:justify-start items-center md:gap-x-8 w-full;
+   @apply container mx-auto px-3 flex justify-between md:justify-start items-center md:gap-x-8 w-full;
 }
 .navLinks {
    @apply flex items-center gap-x-3;
