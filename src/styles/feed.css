@@ -16,5 +16,5 @@
    @apply font-semibold text-2xl mb-2;
 }
 .allLink {
-   @apply text-dark font-semibold text-lg text-center hover:underline;
+   @apply text-dark font-semibold text-lg text-center hover:underline underline-offset-1;
 }
