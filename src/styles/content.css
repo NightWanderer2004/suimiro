@@ -3,10 +3,10 @@
    @apply text-dark flex p-2 flex-col;
 }
 .post {
-   @apply bg-primary md:py-4;
+   @apply bg-[#FBCE1C] md:py-4;
 }
 .hint {
-   @apply bg-secondary text-white md:py-3;
+   @apply bg-[#10B981] text-white md:py-3;
 }
 .post:first-child {
    @apply md:row-span-full;
