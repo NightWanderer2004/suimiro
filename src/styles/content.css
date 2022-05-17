@@ -6,7 +6,7 @@
    @apply bg-primary md:py-4;
 }
 .hint {
-   @apply bg-secondary text-white md:py-2;
+   @apply bg-secondary text-white md:py-3;
 }
 .post:first-child {
    @apply md:row-span-full;
@@ -26,7 +26,7 @@
    @apply text-3xl md:text-4xl;
 }
 .hintTitle {
-   @apply text-xl md:text-2xl;
+   @apply text-2xl md:text-3xl;
 }
 .postPreview,
 .hintPreview {
@@ -34,7 +34,7 @@
 }
 .postDate,
 .hintDate {
-   @apply opacity-90;
+   @apply opacity-95;
 }
 .postDate {
    @apply mt-3 md:mt-5;
@@ -66,5 +66,5 @@
 }
 .hintDate,
 .hintAuthor {
-   @apply font-medium;
+   @apply font-semibold;
 }
