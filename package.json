@@ -1,7 +1,8 @@
 {
   "name": "simple-blog",
   "scripts": {
-    "start": "eleventy --serve & npm run css",
+    "start": "concurrently --kill-others \"npm run serve\" \"npm run css\"",
+    "serve": "eleventy --serve",
     "css": "postcss ./src/styles/index.css -o ./dist/index.css -w",
     "build": "rm -rf dist && eleventy && postcss ./src/styles/index.css -o ./dist/index.css"
   },
@@ -10,6 +11,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
     "autoprefixer": "^10.4.7",
+    "concurrently": "^7.2.0",
     "postcss": "^8.4.13",
     "postcss-cli": "^9.1.0",
     "postcss-import": "^14.1.0",
