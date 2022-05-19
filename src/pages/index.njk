@@ -4,8 +4,8 @@ pageTitle: Главная
 permalink: index.html
 ---
 
-{% set posts = collections.posts.reverse() | limit(3) %} {% set hints =
-collections.hints.reverse() | limit(3) %}
+{% set posts = collections.posts.reverse() | limit(3) %}
+{% set hints = collections.hints.reverse() | limit(3) %}
 
 <h2 class="title">Главная</h2>
 <div class="posts">
@@ -39,18 +39,6 @@ collections.hints.reverse() | limit(3) %}
       <a href="{{ hint.url }}" class="hint">
          <h3 class="hintTitle">{{ hint.data.title }}</h3>
          <p class="hintPreview">{{ hint.data.preview }}</p>
-         <p class="hintDate">
-            {{
-               hint.data.date.toLocaleDateString("ru", {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric"
-               })
-            }}
-         </p>
-         <p class="hintAuthor">
-            автор: <span>{{ hint.data.author }}</span>
-         </p>
       </a>
       {% endfor %}
    </div>
