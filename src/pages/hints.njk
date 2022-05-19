@@ -6,10 +6,10 @@ permalink: "hints/"
 
 <h1 class="title">{{ pageTitle }}</h1>
 
-{% for hint in collections.hints%}
 <ul class="postsList">
+   {% for hint in collections.hints%}
    <li>
       <a href="{{ hint.url }}">{{ hint.data.title }}</a>
    </li>
+   {% endfor %}
 </ul>
-{% endfor %}
