@@ -1,0 +1,15 @@
+.yellow {
+   @apply bg-[#FBCE1C];
+}
+.emerald {
+   @apply bg-[#10B981];
+}
+.blue {
+   @apply bg-[#119cdd];
+}
+.red {
+   @apply bg-[#e12222];
+}
+.orange {
+   @apply bg-[#ff7d1f];
+}
