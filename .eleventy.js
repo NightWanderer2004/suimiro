@@ -3,6 +3,7 @@ module.exports = (config) => {
       return array.slice(0, limit)
    })
    config.addPassthroughCopy('src/img')
+   config.addPassthroughCopy('src/scripts')
    return {
       dir: {
          input: 'src',
