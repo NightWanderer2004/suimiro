@@ -1,12 +1,12 @@
 .post,
 .hint {
-   @apply text-dark flex p-2 flex-col;
+   @apply flex p-2 flex-col;
 }
 .post {
-   @apply bg-[#FBCE1C] md:py-4;
+   @apply md:py-4;
 }
 .hint {
-   @apply bg-[#10B981] text-white md:py-3;
+   @apply md:py-3;
 }
 .post:first-child {
    @apply md:row-span-full;
@@ -28,43 +28,16 @@
 .hintTitle {
    @apply text-2xl md:text-3xl;
 }
-.postPreview,
-.hintPreview {
+.postPreview {
    @apply hidden;
 }
-.postDate,
-.hintDate {
-   @apply opacity-95;
-}
 .postDate {
-   @apply mt-3 md:mt-5;
-}
-.hintDate {
-   @apply mt-2 md:mt-4;
+   @apply mt-3 md:mt-5 opacity-95;
 }
 .postDate,
 .postAuthor {
-   @apply text-sm md:text-base;
-}
-.hintDate,
-.hintAuthor {
-   @apply text-xs md:text-sm;
-}
-.postAuthor span,
-.hintAuthor span {
-   @apply font-semibold;
+   @apply text-sm md:text-base text-right md:text-left font-medium;
 }
 .postAuthor span {
-   @apply text-base md:text-lg;
-}
-.hintAuthor span {
-   @apply text-sm md:text-base;
-}
-.postDate,
-.postAuthor {
-   @apply text-right md:text-left font-medium;
-}
-.hintDate,
-.hintAuthor {
-   @apply font-semibold;
+   @apply font-semibold text-base md:text-lg;
 }

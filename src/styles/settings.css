@@ -1,0 +1,9 @@
+.settingsTitle {
+   @apply font-semibold text-2xl mb-2;
+}
+.colorsButtons {
+   @apply mb-5 md:mb-8 grid grid-rows-2 lg:grid-rows-1 grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2;
+}
+.colorsButton {
+   @apply h-16 lg:h-28 border-2 border-transparent hover:border-dark;
+}
