@@ -1,7 +1,19 @@
 ---
-layout: page.hjk
+layout: page.njk
 pageTitle: Настройки
-permaLink: "settings/"
+permalink: "settings/"
 ---
 
-<div class="change__color"></div>
+<h1 class="title">{{ pageTitle }}</h1>
+<h3 class="settingsTitle">Основной цвет:</h3>
+<ul class="colorsButtons">
+   {% for color in colors %}
+   <button class="colorsButton primary {{ color }}"></button>
+   {% endfor %}
+</ul>
+<h3 class="settingsTitle">Второстепенный цвет:</h3>
+<ul class="colorsButtons">
+   {% for color in colors %}
+   <button class="colorsButton secondary {{ color }}"></button>
+   {% endfor %}
+</ul>
