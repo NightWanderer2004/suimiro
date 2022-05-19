@@ -1,7 +1,5 @@
 ---
 title: Тернарный оператор
-date: 2022-05-12
-author: Эдуард
 pageTitle: Совет - Simple-блог
 ---
 
