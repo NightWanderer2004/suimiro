@@ -12,47 +12,36 @@ const secondaryColor = localStorage.getItem('secondaryColor')
 content.forEach(el => {
    const isPost = el.classList.contains('post') ? true : false
 
-   const bgColor = isPost ? primaryColor : secondaryColor
-   const textColor = isPost
-      ? primaryColor === 'yellow' || primaryColor === 'orange'
-         ? 'text-dark'
-         : 'text-white'
-      : secondaryColor === 'yellow' || secondaryColor === 'orange'
-      ? 'text-dark'
-      : 'text-white'
-
-   if (primaryColor || secondaryColor) el.classList.add(bgColor, textColor)
-   else if (isPost) el.classList.add('yellow', 'text-dark')
-   else el.classList.add('emerald', 'text-white')
+   const bgColor = isPost ? primaryColor || 'yellow' : secondaryColor || 'stone'
+   el.classList.add(bgColor)
 })
 
 primaryBtns.forEach(el => {
-   if (primaryColor === el.classList[el.classList.length - 1]) {
-      el.classList.add('border-dark')
-   }
+   if (primaryColor === el.classList[el.classList.length - 1])
+      el.classList.add('active')
    el.onclick = () => {
-      localStorage.setItem(
-         'primaryColor',
-         el.classList[el.classList.length - 1]
-      )
-      primaryBtns.forEach(el => {
-         el.classList.remove('border-dark')
-      })
-      el.classList.add('border-dark')
+      if (!el.classList.contains('active')) {
+         localStorage.setItem(
+            'primaryColor',
+            el.classList[el.classList.length - 1]
+         )
+      }
+      primaryBtns.forEach(el => el.classList.remove('active'))
+      el.classList.add('active')
    }
 })
 secondaryBtns.forEach(el => {
    if (secondaryColor === el.classList[el.classList.length - 1]) {
-      el.classList.add('border-dark')
+      el.classList.add('active')
    }
    el.onclick = () => {
-      localStorage.setItem(
-         'secondaryColor',
-         el.classList[el.classList.length - 1]
-      )
-      secondaryBtns.forEach(el => {
-         el.classList.remove('border-dark')
-      })
-      el.classList.add('border-dark')
+      if (!el.classList.contains('active')) {
+         localStorage.setItem(
+            'secondaryColor',
+            el.classList[el.classList.length - 1]
+         )
+      }
+      secondaryBtns.forEach(el => el.classList.remove('active'))
+      el.classList.add('active')
    }
 })
