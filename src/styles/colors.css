@@ -1,15 +1,18 @@
 .yellow {
-   @apply bg-[#FBCE1C];
+   @apply bg-[#FBCE1C] text-dark;
 }
 .emerald {
-   @apply bg-[#10B981];
+   @apply bg-[#10B981] text-white;
 }
 .blue {
-   @apply bg-[#119cdd];
+   @apply bg-[#119cdd] text-white;
 }
 .red {
-   @apply bg-[#e12222];
+   @apply bg-[#e12222] text-white;
 }
 .orange {
-   @apply bg-[#ff7d1f];
+   @apply bg-[#F97316] text-dark;
+}
+.stone {
+   @apply bg-[#292524] text-white;
 }
