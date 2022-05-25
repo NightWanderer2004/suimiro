@@ -6,10 +6,12 @@ permalink: "hints/"
 
 <h1 class="title">{{ pageTitle }}</h1>
 
-<ul class="postsList">
+<ul class="hintsList">
    {% for hint in collections.hints%}
    <li>
-      <a href="{{ hint.url }}">{{ hint.data.title }}</a>
+      <a class="hintLink red" href="{{ hint.url }}">
+         <h3>{{ hint.data.title }}</h3>
+      </a>
    </li>
    {% endfor %}
 </ul>
