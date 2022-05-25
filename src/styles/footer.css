@@ -2,7 +2,7 @@
    @apply border-t-2 border-dark text-white flex items-center;
 }
 .asideContent {
-   @apply container mx-auto px-3 py-2 text-dark font-semibold;
+   @apply container mx-auto px-3 md:px-8 py-2 text-dark font-semibold;
 }
 .asideLinks {
    @apply flex gap-x-3;
@@ -18,10 +18,10 @@
    @apply bg-dark;
 }
 .footerContent {
-   @apply container mx-auto px-3 py-4;
+   @apply container mx-auto px-3 md:px-8 py-4;
 }
 .footerInfo {
-   @apply text-white font-semibold;
+   @apply text-white font-semibold text-lg flex justify-between;
 }
 .footerInfo .year {
    @apply text-dark font-bold p-[2px] bg-white;

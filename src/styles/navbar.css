@@ -2,7 +2,7 @@
    @apply border-b-2 border-dark h-16 md:h-20 flex items-center;
 }
 .navbarContent {
-   @apply container mx-auto px-3 flex items-center gap-x-3 md:gap-x-8 w-full;
+   @apply container mx-auto px-3 md:px-8 flex items-center gap-x-3 md:gap-x-8 w-full;
 }
 .navLinks {
    @apply flex items-center md:justify-between gap-x-3 flex-1;
