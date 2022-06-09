@@ -2,10 +2,10 @@
    @apply border-b-2 border-dark h-16 md:h-20 flex items-center;
 }
 .navbarContent {
-   @apply container mx-auto px-3 md:px-8 flex items-center gap-x-3 md:gap-x-8 w-full;
+   @apply container mx-auto px-3 md:px-8 flex items-center gap-x-2 sm:gap-x-3 md:gap-x-8 w-full;
 }
 .navLinks {
-   @apply flex items-center md:justify-between gap-x-3 flex-1;
+   @apply flex items-center justify-between gap-x-2 sm:gap-x-3 flex-1;
 }
 .links {
    @apply flex gap-x-3;
@@ -14,7 +14,7 @@
    @apply text-dark text-base font-medium md:font-semibold;
 }
 .logo {
-   @apply font-bold text-2xl md:text-3xl text-dark;
+   @apply font-bold text-xl sm:text-2xl md:text-3xl text-dark;
 }
 .settingsIcon {
    @apply w-5 md:w-6 h-5 md:h-6;
