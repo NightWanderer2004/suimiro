@@ -1,7 +1,8 @@
 {
   "name": "simple-blog",
   "scripts": {
-    "start": "concurrently --kill-others \"npm run serve\" \"npm run css\"",
+    "start": "node server.js",
+    "dev": "concurrently --kill-others \"npm run serve\" \"npm run css\"",
     "serve": "eleventy --serve",
     "css": "postcss ./src/styles/index.css -o ./dist/index.css -w",
     "build": "rm -rf dist && eleventy && postcss ./src/styles/index.css -o ./dist/index.css",
