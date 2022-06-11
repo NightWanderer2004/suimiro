@@ -4,7 +4,8 @@
     "start": "concurrently --kill-others \"npm run serve\" \"npm run css\"",
     "serve": "eleventy --serve",
     "css": "postcss ./src/styles/index.css -o ./dist/index.css -w",
-    "build": "rm -rf dist && eleventy && postcss ./src/styles/index.css -o ./dist/index.css"
+    "build": "rm -rf dist && eleventy && postcss ./src/styles/index.css -o ./dist/index.css",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install && npm run build"
   },
   "author": "NightWandeder2004",
   "license": "ISC",
@@ -16,5 +17,9 @@
     "postcss-cli": "^9.1.0",
     "postcss-import": "^14.1.0",
     "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
   }
 }
