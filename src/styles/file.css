@@ -1,0 +1,12 @@
+.main p a {
+   @apply text-lg font-semibold text-blue-800/90 hover:underline underline-offset-2;
+}
+.main h3 {
+   @apply text-3xl font-semibold;
+}
+.main p {
+   @apply text-xl font-medium;
+}
+.main p:nth-child(3):first-letter {
+   @apply text-3xl;
+}
