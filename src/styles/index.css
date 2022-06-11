@@ -8,6 +8,7 @@
 @import "./content.css";
 @import "./footer.css";
 @import "./categoryPage.css";
+@import "./file.css";
 
 @tailwind base;
 @tailwind components;
@@ -21,5 +22,5 @@ body {
    @apply tracking-wider text-dark font-inter;
 }
 .wrapper {
-   @apply min-h-screen overflow-hidden flex flex-col;
+   @apply flex flex-col min-h-screen overflow-hidden;
 }
