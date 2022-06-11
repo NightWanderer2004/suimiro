@@ -1,9 +1,0 @@
-.article p a {
-   @apply text-lg font-semibold text-blue-800/90 hover:underline underline-offset-2;
-}
-.article h3 {
-   @apply text-3xl font-semibold;
-}
-.article p {
-   @apply text-xl font-medium;
-}

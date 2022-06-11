@@ -8,7 +8,7 @@
 @import "./content.css";
 @import "./footer.css";
 @import "./categoryPage.css";
-@import "./file.css";
+@import "./article.css";
 
 @tailwind base;
 @tailwind components;
