@@ -9,6 +9,7 @@ const content = [...posts, ...hints]
 const primaryColor = localStorage.getItem('primaryColor')
 const secondaryColor = localStorage.getItem('secondaryColor')
 
+// Set the colors
 content.forEach(el => {
    const isPost = el.classList.contains('post') ? true : false
 
@@ -16,6 +17,7 @@ content.forEach(el => {
    el.classList.add(bgColor)
 })
 
+// Set active class on buttons
 primaryBtns.forEach(el => {
    if (primaryColor === el.classList[el.classList.length - 1])
       el.classList.add('active')
