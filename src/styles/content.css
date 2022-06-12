@@ -20,7 +20,7 @@
 }
 .postTitle,
 .hintTitle {
-   @apply font-medium tracking-tight truncate;
+   @apply font-medium tracking-tight;
 }
 .postTitle {
    @apply text-3xl md:text-4xl;
