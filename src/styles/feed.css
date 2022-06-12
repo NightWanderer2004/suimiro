@@ -13,8 +13,8 @@
    @apply md:grid-cols-2 md:grid-rows-1 gap-y-2;
 }
 .feedTitle {
-   @apply font-semibold text-2xl mb-2;
+   @apply mb-2 text-2xl font-semibold truncate;
 }
 .allLink {
-   @apply text-blue-800/90 font-semibold text-lg text-center hover:underline underline-offset-2;
+   @apply text-lg font-semibold text-center text-blue-800/90 hover:underline underline-offset-2;
 }

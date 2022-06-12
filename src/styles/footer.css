@@ -1,8 +1,8 @@
 .aside {
-   @apply border-t-2 border-dark text-white flex items-center;
+   @apply flex items-center text-white border-t-2 border-dark;
 }
 .asideContent {
-   @apply container mx-auto px-3 md:px-8 py-2 text-dark font-semibold;
+   @apply container px-3 py-2 mx-auto font-semibold md:px-8 lg:px-28 text-dark;
 }
 .asideLinks {
    @apply flex gap-x-3;
@@ -18,10 +18,10 @@
    @apply bg-dark;
 }
 .footerContent {
-   @apply container mx-auto px-3 md:px-8 py-4;
+   @apply container px-3 py-4 mx-auto md:px-8 lg:px-28;
 }
 .footerInfo {
-   @apply text-white font-semibold text-lg flex justify-between;
+   @apply flex justify-between text-lg font-semibold text-white;
 }
 .footerInfo .year {
    @apply text-dark font-bold p-[2px] bg-white;
