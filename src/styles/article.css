@@ -4,6 +4,9 @@
 .article h3 {
    @apply my-4 text-3xl font-semibold;
 }
+.article h4 {
+   @apply mt-8 text-2xl font-semibold;
+}
 .article p {
    @apply mt-6 text-xl font-normal leading-normal;
 }
