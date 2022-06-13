@@ -13,3 +13,6 @@
 .article p:nth-child(3):first-letter {
    @apply text-4xl font-medium text-gray-600;
 }
+.article img {
+   @apply rounded mt-6;
+}
