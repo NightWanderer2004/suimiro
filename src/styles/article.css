@@ -14,5 +14,20 @@
    @apply text-4xl font-medium text-gray-600;
 }
 .article img {
-   @apply rounded mt-6;
+   @apply mt-6 rounded;
+}
+.article pre {
+   @apply p-2 mt-6 overflow-scroll bg-gray-100 rounded;
+   tab-size: 2;
+}
+
+@media screen and (min-width: 768px) {
+   .article pre {
+      tab-size: 3;
+   }
+}
+@media screen and (min-width: 1024px) {
+   .article pre {
+      tab-size: 4;
+   }
 }
