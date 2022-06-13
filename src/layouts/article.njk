@@ -10,7 +10,14 @@
          type="image/x-icon"
       />
       <link rel="stylesheet" href="/index.css" />
-      <title>Пост - Simple-блог</title>
+      <title>
+         {% if tag === 'hint' %}
+         Совет
+         {% elif tag === 'post' %}
+         Пост
+         {% endif %}
+         - Simple-блог
+      </title>
    </head>
    <body>
       <div class="wrapper">
