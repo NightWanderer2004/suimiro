@@ -16,3 +16,9 @@
 .stone {
    @apply bg-[#292524] text-white;
 }
+.lime {
+   @apply bg-[#84CC16] text-dark;
+}
+.indigo {
+   @apply bg-[#4338CA] text-white;
+}

@@ -1,1 +1,10 @@
-module.exports = ['red', 'yellow', 'orange', 'emerald', 'blue', 'stone']
+module.exports = [
+   'red',
+   'yellow',
+   'orange',
+   'emerald',
+   'lime',
+   'blue',
+   'indigo',
+   'stone',
+]
