@@ -2,16 +2,23 @@ const primaryBtns = document.querySelectorAll('.colorsButton.primary')
 const secondaryBtns = document.querySelectorAll('.colorsButton.secondary')
 
 const posts = document.querySelectorAll('.post')
+const postsList = document.querySelectorAll('.postLink')
 const hints = document.querySelectorAll('.hint')
+const hintsList = document.querySelectorAll('.hintLink')
 
-const content = [...posts, ...hints]
+const feed = [...posts, ...hints]
+const lists = [...postsList, ...hintsList]
+const content = [...feed, ...lists]
 
 const primaryColor = localStorage.getItem('primaryColor')
 const secondaryColor = localStorage.getItem('secondaryColor')
 
 // Set the colors
 content.forEach(el => {
-   const isPost = el.classList.contains('post') ? true : false
+   const isPost =
+      el.classList.contains('post') || el.classList.contains('postLink')
+         ? true
+         : false
 
    const bgColor = isPost ? primaryColor || 'yellow' : secondaryColor || 'stone'
    el.classList.add(bgColor)
