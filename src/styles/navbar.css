@@ -2,20 +2,45 @@
    @apply flex items-center h-16 border-b-2 border-dark md:h-20;
 }
 .navbarContent {
-   @apply container flex items-center w-full px-3 mx-auto md:px-8 lg:px-28 gap-x-6 md:gap-x-8;
+   @apply container flex items-center justify-between md:justify-start w-full px-3 mx-auto md:px-8 lg:px-28 gap-x-6 md:gap-x-8;
 }
 .navLinks {
-   @apply flex items-center justify-between flex-1 gap-x-2 sm:gap-x-3;
+   @apply absolute md:static right-0 -top-full w-full flex-1 border-b-2 border-dark md:border-transparent bg-white md:bg-transparent;
+}
+.navLinksContainer {
+   @apply flex items-center justify-between gap-x-2 sm:gap-x-3 container mx-auto pt-16 pb-2 px-3 md:p-0;
 }
 .links {
    @apply flex gap-x-3;
 }
 .navLink {
-   @apply text-base font-medium text-dark md:font-semibold;
+   @apply text-3xl md:text-base font-medium text-dark md:font-semibold text-right md:text-left;
 }
 .logo {
-   @apply text-xl font-bold sm:text-2xl md:text-3xl text-dark;
+   @apply text-3xl z-10 font-bold text-dark;
 }
 .settingsIcon {
-   @apply w-5 h-5 md:w-6 md:h-6;
+   @apply w-7 h-7 md:w-6 md:h-6;
+}
+.burger {
+   @apply md:hidden z-10;
+}
+.burger.active + .navLinks {
+   @apply top-0;
+}
+.burger .menu {
+   @apply block;
+}
+.burger .menu,
+.burger .cross {
+   @apply pointer-events-none;
+}
+.burger.active .menu {
+   @apply hidden;
+}
+.burger.active .cross {
+   @apply block;
+}
+.burger .cross {
+   @apply hidden;
 }

@@ -3,16 +3,22 @@
       <a class="logo" href="/">
          {{ site.logo }}
       </a>
+      <button class="burger">
+         <img class="menu" src="/assets/icons/menu.svg" width='36' alt="=">
+         <img class="cross" src="/assets/icons/cross.svg" width='36' alt="x">
+      </button>
       <ul class="navLinks">
-         <li class="links">
-            <a class="navLink" href="/posts">посты</a>
-            <a class="navLink" href="/hints">советы</a>
-         </li>
-         <li>
-            <a class="navLink" href="/settings">
-               <img class="settingsIcon" src="/assets/img/settings.svg" alt="[/]" />
-            </a>
-         </li>
+         <div class="navLinksContainer">
+            <li class="links">
+               <a class="navLink" href="/posts">посты</a>
+               <a class="navLink" href="/hints">советы</a>
+            </li>
+            <li>
+               <a class="navLink" href="/settings">
+                  <img class="settingsIcon" src="/assets/img/settings.svg" alt="[/]" />
+               </a>
+            </li>
+         </div>
       </ul>
    </nav>
 </header>

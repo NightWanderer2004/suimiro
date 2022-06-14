@@ -1,5 +1,8 @@
 const primaryBtns = document.querySelectorAll('.colorsButton.primary')
 const secondaryBtns = document.querySelectorAll('.colorsButton.secondary')
+const burger = document.querySelector('.burger')
+const navbar = document.querySelector('.navbar')
+const navbarHeight = navbar.offsetHeight * 2
 
 const posts = document.querySelectorAll('.post')
 const postsList = document.querySelectorAll('.postLink')
@@ -54,3 +57,12 @@ secondaryBtns.forEach(el => {
       el.classList.add('active')
    }
 })
+
+// Menu
+burger.onclick = e => e.target.classList.toggle('active')
+
+// Close menu on scroll
+window.onscroll = () => {
+   if (document.documentElement.scrollTop > navbarHeight)
+      burger.classList.remove('active')
+}
