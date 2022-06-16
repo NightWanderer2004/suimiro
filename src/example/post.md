@@ -1,7 +1,7 @@
 ---
 title: ЗАГОЛОВОК ПОСТА
 preview: ПРЕВЬЮ ПОСТА
-date: "YYYY-MM-DD"
+date: формат(2012-12-12)
 author: АВТОР
 tag: post
 ---
