@@ -20,6 +20,14 @@
    @apply p-2 mt-6 overflow-scroll bg-gray-100 rounded;
    tab-size: 2;
 }
+.article ul,
+.article ol {
+   @apply list-decimal mt-3 pl-6;
+}
+.article ul li,
+.article ol li {
+   @apply text-xl mt-3;
+}
 
 @media screen and (min-width: 768px) {
    .article pre {
