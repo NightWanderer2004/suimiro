@@ -5,7 +5,7 @@ permalink: index.html
 ---
 
 {% set posts = collections.posts.reverse() | limit(3) %}
-{% set hints = collections.hints.reverse() | limit(3) %}
+{% set hints = collections.hints | limit(3) %}
 
 <h2 class="title">Главная</h2>
 <div class="posts">
