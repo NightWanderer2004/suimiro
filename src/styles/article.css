@@ -8,7 +8,7 @@
    @apply mt-8 text-2xl font-semibold;
 }
 .article p {
-   @apply mt-6 text-xl font-normal leading-normal;
+   @apply mt-6 text-xl font-normal leading-snug md:leading-normal;
 }
 .article p:nth-child(3):first-letter {
    @apply text-4xl font-medium text-gray-600;
@@ -22,7 +22,7 @@
 }
 .article ul,
 .article ol {
-   @apply list-decimal mt-3 pl-6;
+   @apply list-decimal mt-6 pl-10;
 }
 .article ul li,
 .article ol li {
