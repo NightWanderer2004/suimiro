@@ -22,3 +22,9 @@
 .indigo {
    @apply bg-[#4338CA] text-white;
 }
+.lightviolet {
+   @apply bg-[#A78BFA] text-dark;
+}
+.transparent {
+   @apply bg-transparent text-dark border-[3px] border-dark;
+}
