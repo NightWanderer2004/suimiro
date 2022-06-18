@@ -6,20 +6,26 @@
     "serve": "eleventy --serve",
     "css": "postcss ./src/styles/index.css -o ./dist/index.css -w",
     "build": "rm -rf dist && eleventy && postcss ./src/styles/index.css -o ./dist/index.css",
-    "server": "node server.js",
+    "spell": "yaspeller --only-errors -l 'ru' *.md",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install && npm run build"
+  },
+  "yaspeller": {
+    "dictionary": [
+      "конфиг(ах|)"
+    ]
   },
   "author": "NightWandeder2004",
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^1.0.1",
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
     "autoprefixer": "^10.4.7",
     "concurrently": "^7.2.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
     "postcss": "^8.4.13",
     "postcss-cli": "^9.1.0",
     "postcss-import": "^14.1.0",
-    "tailwindcss": "^3.0.24"
+    "tailwindcss": "^3.0.24",
+    "yaspeller": "^8.0.1"
   }
 }
