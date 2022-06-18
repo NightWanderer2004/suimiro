@@ -21,6 +21,10 @@ html {
 body {
    @apply tracking-wider text-dark font-inter;
 }
+body.active {
+   @apply bg-zinc-800 text-white;
+}
+
 .wrapper {
    @apply flex flex-col min-h-screen overflow-hidden;
 }

@@ -16,6 +16,10 @@ const content = [...feed, ...lists]
 const primaryColor = localStorage.getItem('primaryColor')
 const secondaryColor = localStorage.getItem('secondaryColor')
 
+const themeSwitcher = document.querySelector('.darktheme')
+const themeInfo = document.querySelector('.darktheme__info')
+const themeDark = document.querySelector('body')
+
 // Set the colors
 content.forEach(el => {
    const isPost =
@@ -66,3 +70,17 @@ window.onscroll = () => {
    if (document.documentElement.scrollTop > navbarHeight)
       burger.classList.remove('active')
 }
+
+// Dark Theme
+
+themeSwitcher.addEventListener('click', () => {
+   themeDark.classList.toggle('active')
+   // if (themeInfo.innerHTML == 'Выкл') {
+   //    themeInfo.innerHTML = 'Вкл'
+   // } else {
+   //    themeInfo.innerHTML = 'Выкл'
+   // }
+   themeInfo.innerHTML == 'Выкл'
+      ? (themeInfo.innerHTML = 'Вкл')
+      : (themeInfo.innerHTML = 'Выкл')
+})

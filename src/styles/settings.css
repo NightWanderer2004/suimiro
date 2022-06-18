@@ -1,6 +1,16 @@
 .settingsTitle {
    @apply font-semibold text-2xl mb-2;
 }
+.darktheme__container {
+   @apply flex gap-x-2 items-center;
+}
+.darktheme {
+   @apply grid place-content-center accent-[#292524] w-[16px] h-[16px];
+}
+
+.darktheme__info {
+   @apply text-lg font-semibold;
+}
 .colorsButtons {
    @apply mb-5 md:mb-8 grid grid-rows-2 lg:grid-rows-1 grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2;
 }
