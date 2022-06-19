@@ -5,7 +5,7 @@
    @apply flex gap-x-2 items-center;
 }
 .darktheme {
-   @apply grid place-content-center accent-[#292524] w-[16px] h-[16px];
+   @apply grid place-content-center accent-dark w-[16px] h-[16px];
 }
 
 .darktheme__info {

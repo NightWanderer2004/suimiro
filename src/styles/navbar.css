@@ -14,10 +14,10 @@
    @apply flex gap-x-3;
 }
 .navLink {
-   @apply text-3xl md:text-base font-medium text-dark md:font-semibold text-right md:text-left;
+   @apply text-3xl md:text-base font-medium md:font-semibold text-right md:text-left;
 }
 .logo {
-   @apply text-3xl z-10 font-bold text-dark;
+   @apply text-3xl z-10 font-bold;
 }
 .settingsIcon {
    @apply w-7 h-7 md:w-6 md:h-6;

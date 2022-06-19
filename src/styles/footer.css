@@ -8,7 +8,7 @@
    @apply flex gap-x-3;
 }
 .link {
-   @apply flex items-center gap-x-1 text-dark;
+   @apply flex items-center gap-x-1;
 }
 .githubIcon,
 .telegramIcon {
