@@ -11,7 +11,7 @@ tag: hint
 
 #### Как можно, но не эффективно
 
-```
+```js
 if (loading){
 	return <Loader />
 }
@@ -24,7 +24,7 @@ else {
 
 #### Как нужно
 
-```
+```js
 loading ? <Loader /> : <List />
 ```
 
