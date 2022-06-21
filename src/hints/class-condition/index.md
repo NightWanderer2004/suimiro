@@ -7,7 +7,7 @@ tag: hint
 
 Все мы знаем, что у одного элемента может быть несколько классов, это очевидно
 
-```
+```js
 <button class="btn boxItem">BTN</button>
 ```
 
@@ -17,7 +17,7 @@ tag: hint
 
 Добавить через classList.add('active') или же через classList.toggle('active'):
 
-```
+```js
 const btn = document.querySelector('.btn')
 
 btn.onclick = e => e.target.classList.add('active')
@@ -33,7 +33,7 @@ btn.onclick = e => e.target.classList.add('active')
 
 Я считаю, что это сложно, поэтому показываю хороший способ:
 
-```
+```js
 const [isBtnActive, setIsBtnActive] = useState(false)
 const toggleBtn = () => setIsBtnActive(!isBtnActive)
 
