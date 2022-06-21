@@ -37,7 +37,7 @@ btn.onclick = e => e.target.classList.add('active')
 const [isBtnActive, setIsBtnActive] = useState(false)
 const toggleBtn = () => setIsBtnActive(!isBtnActive)
 
-<button className={`btn boxItem ${isBtnActive ? 'active' : ''}` onClick=(toggleBtn)}>
+<button className={`btn boxItem ${isBtnActive ? 'active' : ''}`} onClick=(toggleBtn)}>
 ```
 
 Уже поняли?
