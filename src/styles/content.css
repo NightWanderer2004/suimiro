@@ -1,6 +1,6 @@
 .post,
 .hint {
-   @apply flex flex-col p-2;
+   @apply flex flex-col justify-between p-2;
 }
 .post {
    @apply md:py-4;
@@ -12,7 +12,7 @@
    @apply md:row-span-full;
 }
 .post:first-child .postPreview {
-   @apply flex-1 mt-3 text-lg font-medium md:block leading-6;
+   @apply flex-1 mt-3 text-lg font-medium tracking-normal md:block leading-6;
 }
 .post:hover .postTitle,
 .hint:hover .hintTitle {
@@ -20,7 +20,7 @@
 }
 .postTitle,
 .hintTitle {
-   @apply font-medium tracking-tight;
+   @apply font-semibold tracking-tight break-words;
 }
 .postTitle {
    @apply text-3xl md:text-4xl;

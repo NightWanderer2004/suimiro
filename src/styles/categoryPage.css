@@ -4,5 +4,5 @@
 }
 .postLink,
 .hintLink {
-   @apply flex flex-col p-2 md:p-3 font-semibold text-xl md:text-2xl w-full h-full hover:underline underline-offset-2;
+   @apply flex flex-col p-2 md:p-3 font-semibold text-xl md:text-2xl w-full h-full hover:underline underline-offset-2 break-words;
 }

@@ -20,7 +20,7 @@
    @apply text-3xl z-10 font-bold text-dark;
 }
 .settingsIcon {
-   @apply w-7 h-7 md:w-6 md:h-6;
+   @apply w-8 h-8 md:w-6 md:h-6;
 }
 .burger {
    @apply md:hidden z-10;
