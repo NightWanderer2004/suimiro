@@ -27,6 +27,7 @@ tag: post
 ```
 ---
 title: ЗАГОЛОВОК СОВЕТА
+date: ДАТА (формат: YYYY-MM-DD)
 tag: hint
 ---
 ```
