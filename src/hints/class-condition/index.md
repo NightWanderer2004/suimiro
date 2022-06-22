@@ -1,5 +1,6 @@
 ---
 title: Класс по условию
+date: 2022-06-19
 tag: hint
 ---
 
@@ -18,9 +19,9 @@ tag: hint
 Добавить через classList.add('active') или же через classList.toggle('active'):
 
 ```js
-const btn = document.querySelector('.btn')
+const btn = document.querySelector(".btn");
 
-btn.onclick = e => e.target.classList.add('active')
+btn.onclick = (e) => e.target.classList.add("active");
 ```
 
 #### Как быть в React?

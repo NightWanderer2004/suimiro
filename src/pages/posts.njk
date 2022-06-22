@@ -4,10 +4,12 @@ pageTitle: Посты
 permalink: "posts/"
 ---
 
+{% set posts = collections.posts %}
+
 <h1 class="title">{{ pageTitle }}</h1>
 
 <ul class="postsList">
-   {% for post in collections.posts %}
+   {% for post in posts %}
    <li>
       <a class="postLink" href="{{ post.url }}">
          <h3>{{ post.data.title }}</h3>

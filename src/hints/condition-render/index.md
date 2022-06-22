@@ -1,5 +1,6 @@
 ---
 title: "true ? < Ok /> : < Bad />"
+date: 2022-06-14
 tag: hint
 ---
 
@@ -12,11 +13,10 @@ tag: hint
 #### Как можно, но не эффективно
 
 ```js
-if (loading){
-	return <Loader />
-}
-else {
-	return <List />
+if (loading) {
+   return <Loader />;
+} else {
+   return <List />;
 }
 ```
 
@@ -25,7 +25,7 @@ else {
 #### Как нужно
 
 ```js
-loading ? <Loader /> : <List />
+loading ? <Loader /> : <List />;
 ```
 
 #### Итог
