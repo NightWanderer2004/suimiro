@@ -16,8 +16,8 @@ const content = [...feed, ...lists]
 const primaryColor = localStorage.getItem('primaryColor')
 const secondaryColor = localStorage.getItem('secondaryColor')
 
-const themeSwitcher = document.querySelector('.darktheme')
-const themeInfo = document.querySelector('.darktheme__info')
+const themeSwitcher = document.querySelector('.darktheme') || ''
+const themeInfo = document.querySelector('.darktheme__info') || ''
 
 // Set the colors
 content.forEach(el => {
