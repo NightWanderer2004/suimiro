@@ -18,7 +18,6 @@ const secondaryColor = localStorage.getItem('secondaryColor')
 
 const themeSwitcher = document.querySelector('.darktheme')
 const themeInfo = document.querySelector('.darktheme__info')
-const themeDark = document.querySelector('body')
 
 // Set the colors
 content.forEach(el => {
@@ -72,15 +71,19 @@ window.onscroll = () => {
 }
 
 // Dark Theme
+if (localStorage.getItem('theme') === 'dark') {
+   themeSwitcher.checked = true
+   themeInfo.innerHTML = 'Вкл'
+   document.body.classList.add('active')
+}
 
-themeSwitcher.addEventListener('click', () => {
-   themeDark.classList.toggle('active')
-   // if (themeInfo.innerHTML == 'Выкл') {
-   //    themeInfo.innerHTML = 'Вкл'
-   // } else {
-   //    themeInfo.innerHTML = 'Выкл'
-   // }
-   themeInfo.innerHTML == 'Выкл'
+themeSwitcher.onchange = () => {
+   themeSwitcher.checked
       ? (themeInfo.innerHTML = 'Вкл')
       : (themeInfo.innerHTML = 'Выкл')
-})
+
+   const theme = themeSwitcher.checked ? 'dark' : 'light'
+   localStorage.setItem('theme', theme)
+
+   document.body.classList.toggle('active')
+}
