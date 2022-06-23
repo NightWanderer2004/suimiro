@@ -36,7 +36,7 @@
 }
 .burger .menu,
 .burger .cross {
-   @apply pointer-events-none;
+   @apply pointer-events-none w-9 h-9;
 }
 .burger.active .menu {
    @apply hidden;

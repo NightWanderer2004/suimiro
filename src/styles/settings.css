@@ -1,14 +1,17 @@
 .settingsTitle {
    @apply font-semibold text-2xl mb-2;
 }
-.darktheme__container {
+.darktheme {
    @apply flex gap-x-2 items-center;
 }
-.darktheme {
-   @apply grid place-content-center accent-dark w-[16px] h-[16px];
+.darkthemeCheckbox {
+   @apply grid place-content-center accent-dark w-[16px] h-[16px] cursor-pointer;
+}
+.darkthemeSwitcher {
+   @apply flex items-center gap-x-2 cursor-pointer;
 }
 
-.darktheme__info {
+.darkthemeInfo {
    @apply text-lg font-semibold;
 }
 .colorsButtons {
