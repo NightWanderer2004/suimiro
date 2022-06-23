@@ -6,6 +6,7 @@
 @import "./page.css";
 @import "./feed.css";
 @import "./content.css";
+@import "./darktheme.css";
 @import "./footer.css";
 @import "./categoryPage.css";
 @import "./article.css";
@@ -19,12 +20,8 @@ html {
    @apply scroll-smooth;
 }
 body {
-   @apply tracking-wider text-dark font-inter;
+   @apply tracking-wider text-dark font-inter transition duration-200;
 }
-body.active {
-   @apply bg-zinc-800 text-white;
-}
-
 .wrapper {
    @apply flex flex-col min-h-screen overflow-hidden;
 }

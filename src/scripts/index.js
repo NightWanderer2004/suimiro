@@ -74,7 +74,7 @@ window.onscroll = () => {
 if (localStorage.getItem('theme') === 'dark') {
    themeSwitcher.checked = true
    themeInfo.innerHTML = 'Вкл'
-   document.body.classList.add('active')
+   document.body.classList.add('dark')
 }
 
 themeSwitcher.onchange = () => {
@@ -85,5 +85,5 @@ themeSwitcher.onchange = () => {
    const theme = themeSwitcher.checked ? 'dark' : 'light'
    localStorage.setItem('theme', theme)
 
-   document.body.classList.toggle('active')
+   document.body.classList.toggle('dark')
 }

@@ -1,0 +1,42 @@
+body.dark {
+   @apply bg-dark/90 text-neutral-100 transition duration-200;
+}
+body.dark .navbar {
+   @apply border-l-orange-600;
+}
+
+/* ---Burger--- */
+
+body.dark .menu path {
+   @apply fill-neutral-100;
+}
+body.dark .cross path {
+   @apply fill-neutral-100;
+}
+body.dark .navLinksContainer {
+   @apply bg-dark/90;
+}
+
+/* ---Icons--- */
+
+/* Settings */
+body.dark .settingsIcon path {
+   @apply fill-neutral-100;
+}
+/* GithHub */
+body.dark .githubIcon path {
+   @apply fill-neutral-100;
+}
+/* Telegram */
+body.dark .tgBcg {
+   @apply fill-neutral-100;
+}
+body.dark .tgWings {
+   @apply fill-dark/90;
+}
+body.dark .tgBack {
+   @apply fill-[#252525];
+}
+body.dark .tgCenter {
+   @apply fill-[#444444];
+}
