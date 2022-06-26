@@ -4,7 +4,7 @@ pageTitle: Настройки главной
 permalink: "settings/"
 ---
 
-<h1 class="title">{{ pageTitle }} </h1>
+<h1 class="title">{{ pageTitle }}</h1>
 <h3 class="settingsTitle">Основной цвет:</h3>
 <ul class="colorsButtons">
    {% for color in colors %}
@@ -17,3 +17,11 @@ permalink: "settings/"
    <button class="colorsButton secondary {{ color }}"></button>
    {% endfor %}
 </ul>
+<h3 class="settingsTitle">Тёмная тема:</h3>
+<div class="darktheme">
+   <label class="darkthemeSwitcher">
+      <input type="checkbox" class="darkthemeCheckbox" />
+      <span class="darkthemeInfo">Выкл</span>
+   </label>
+
+</div>
