@@ -95,11 +95,11 @@ body.dark .tgBgc {
    @apply fill-neutral-100;
 }
 body.dark .tgWings {
-   @apply fill-dark/90;
+   @apply fill-dark;
 }
 body.dark .tgBack {
-   @apply fill-[#252525];
+   @apply fill-dark/90;
 }
 body.dark .tgCenter {
-   @apply fill-[#444444];
+   @apply fill-dark-80;
 }
