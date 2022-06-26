@@ -101,5 +101,5 @@ body.dark .tgBack {
    @apply fill-dark/90;
 }
 body.dark .tgCenter {
-   @apply fill-dark/80;
+   @apply fill-gray-700;
 }
