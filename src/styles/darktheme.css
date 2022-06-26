@@ -1,15 +1,13 @@
 body.dark {
-   @apply bg-dark/95 text-neutral-100;
+   @apply bg-dark text-white/95;
 }
 
 /* Чекбокс */
-
 body.dark .darkthemeCheckbox {
    @apply accent-white;
 }
 
-/* Навабар */
-
+/* Навбар */
 body.dark .navbar {
    @apply border-white;
 }
@@ -17,14 +15,66 @@ body.dark .navLinks {
    @apply bg-dark md:bg-transparent border-white md:border-transparent;
 }
 
-/* Футер */
+/* Цвета */
+body.dark .colorsButton.transparent:hover::before {
+   content: "";
+   @apply bg-white/70;
+}
+body.dark .colorsButton.active.transparent::before {
+   content: "";
+   @apply bg-white;
+}
+body.dark .transparent {
+   @apply text-white border-white;
+}
+body.dark .stone {
+   @apply bg-zinc-50 text-dark;
+}
+body.dark .colorsButton.stone:hover::before {
+   content: "";
+   @apply bg-dark/70;
+}
+body.dark .colorsButton.active.stone::before {
+   content: "";
+   @apply bg-dark;
+}
+body.dark .yellow,
+body.dark .emerald,
+body.dark .blue,
+body.dark .red,
+body.dark .orange,
+body.dark .stone,
+body.dark .lime,
+body.dark .indigo,
+body.dark .lightviolet {
+   @apply bg-opacity-90;
+}
 
+/* Фид */
+body.dark .allLink {
+   @apply text-blue-600/90;
+}
+
+/* Пост/Совет */
+body.dark .main.article a:first-child {
+   @apply text-blue-600/90;
+}
+
+/* Футер */
 body.dark .aside {
    @apply border-white;
 }
+body.dark .footer {
+   @apply bg-white;
+}
+body.dark .footerInfo {
+   @apply text-dark;
+}
+body.dark .footerInfo .year {
+   @apply text-white bg-dark;
+}
 
 /* ---Burger--- */
-
 body.dark .menu path {
    @apply fill-neutral-100;
 }
@@ -33,18 +83,15 @@ body.dark .cross path {
 }
 
 /* Settings */
-
 body.dark .settingsIcon path {
    @apply fill-neutral-100;
 }
 /* GithHub */
-
 body.dark .githubIcon path {
    @apply fill-neutral-100;
 }
 /* Telegram */
-
-body.dark .tgBcg {
+body.dark .tgBgc {
    @apply fill-neutral-100;
 }
 body.dark .tgWings {

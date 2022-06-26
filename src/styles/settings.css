@@ -10,7 +10,6 @@
 .darkthemeSwitcher {
    @apply flex items-center gap-x-2 cursor-pointer;
 }
-
 .darkthemeInfo {
    @apply text-lg font-semibold;
 }
