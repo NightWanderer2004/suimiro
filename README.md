@@ -62,7 +62,3 @@
 -  Подсказки для **[TailwindCSS](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)**;
 
 -  Подсветка синтаксиса **[Nunjucks](https://marketplace.visualstudio.com/items?itemName=ronnidc.nunjucks)**;
-
-```
-
-```
