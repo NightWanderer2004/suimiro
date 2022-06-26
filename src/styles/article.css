@@ -2,16 +2,16 @@
    @apply text-lg font-semibold text-blue-800/90 hover:underline underline-offset-2;
 }
 .article h3 {
-   @apply my-4 text-3xl font-semibold;
+   @apply my-4 text-4xl font-bold;
 }
 .article h4 {
-   @apply mt-8 text-2xl font-semibold;
+   @apply mt-8 text-3xl font-semibold;
 }
 .article p {
-   @apply mt-6 text-xl font-normal leading-snug md:leading-normal;
+   @apply mt-6 text-xl font-medium tracking-normal leading-snug md:leading-normal;
 }
-.article p:nth-child(3):first-letter {
-   @apply text-4xl font-medium text-gray-600;
+.article p:first-of-type::first-letter {
+   @apply text-3xl;
 }
 .article img {
    @apply mt-6 rounded;

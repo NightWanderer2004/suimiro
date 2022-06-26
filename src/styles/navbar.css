@@ -20,7 +20,7 @@
    @apply text-3xl z-10 font-bold;
 }
 .settingsIcon {
-   @apply w-7 h-7 md:w-6 md:h-6 transition-transform;
+   @apply w-8 h-8 md:w-6 md:h-6 transition-transform;
 }
 .settingsIcon:active {
    @apply rotate-45;

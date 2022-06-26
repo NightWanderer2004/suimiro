@@ -5,7 +5,7 @@ permalink: index.html
 ---
 
 {% set posts = collections.posts.reverse() | limit(3) %}
-{% set hints = collections.hints | limit(3) %}
+{% set hints = collections.hints.reverse() | limit(3) %}
 
 <h2 class="title">Главная</h2>
 <div class="posts">
@@ -15,18 +15,20 @@ permalink: index.html
       <a href="{{ post.url }}" class="post">
          <h3 class="postTitle">{{ post.data.title }}</h3>
          <p class="postPreview">{{ post.data.preview }}</p>
-         <p class="postDate">
-            {{
-               post.data.date.toLocaleDateString("ru", {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric"
-               })
-            }}
-         </p>
-         <p class="postAuthor">
-            автор: <span>{{ post.data.author }}</span>
-         </p>
+         <div>
+            <p class="postDate">
+               {{
+                  post.data.date.toLocaleDateString("ru", {
+                     year: "numeric",
+                     month: "long",
+                     day: "numeric"
+                  })
+               }}
+            </p>
+            <p class="postAuthor">
+               автор: <span>{{ post.data.author }}</span>
+            </p>
+         </div>
       </a>
       {% endfor %}
    </div>

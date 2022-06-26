@@ -4,10 +4,12 @@ pageTitle: Советы
 permalink: "hints/"
 ---
 
+{% set hints = collections.hints %}
+
 <h1 class="title">{{ pageTitle }}</h1>
 
 <ul class="hintsList">
-   {% for hint in collections.hints%}
+   {% for hint in hints %}
    <li>
       <a class="hintLink" href="{{ hint.url }}">
          <h3>{{ hint.data.title }}</h3>

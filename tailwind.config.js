@@ -7,7 +7,7 @@ module.exports = {
          },
       },
       fontFamily: {
-         inter: 'Inter',
+         montserrat: 'Montserrat',
       },
    },
    plugins: [],
