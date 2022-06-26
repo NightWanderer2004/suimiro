@@ -59,6 +59,9 @@ body.dark .allLink {
 body.dark .main.article a:first-child {
    @apply text-blue-600/90;
 }
+body.dark .main.article pre {
+   @apply bg-zinc-800;
+}
 
 /* Футер */
 body.dark .aside {
