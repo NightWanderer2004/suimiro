@@ -10,6 +10,9 @@
 .article p {
    @apply mt-6 text-xl font-medium tracking-normal leading-snug md:leading-normal;
 }
+.article p:last-of-type {
+   @apply mb-6;
+}
 .article p:first-of-type::first-letter {
    @apply text-3xl;
 }
