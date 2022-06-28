@@ -2,7 +2,7 @@
    @apply font-semibold text-2xl mb-2;
 }
 .darktheme {
-   @apply flex gap-x-2 items-center;
+   @apply flex flex-col gap-x-2 items-start;
 }
 .darkthemeCheckbox {
    @apply grid place-content-center accent-dark w-[16px] h-[16px] cursor-pointer;
