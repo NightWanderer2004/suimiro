@@ -1,26 +1,26 @@
 .navbar {
-   @apply flex items-center h-16 border-b-2 border-dark md:h-20 bg-transparent;
+   @apply flex items-center h-16 border-b-2 md:border-b-4 border-dark md:h-20 bg-transparent;
 }
 .navbarContent {
-   @apply container flex items-center justify-between md:justify-start w-full px-3 mx-auto md:px-8 lg:px-28 gap-x-6 md:gap-x-8;
+   @apply container md:max-w-none flex items-center justify-between md:justify-start w-full px-1 mx-auto gap-x-6 md:gap-x-8;
 }
 .navLinks {
    @apply absolute md:static right-0 -top-full w-full flex-1 border-b-2 border-dark md:border-transparent bg-white md:bg-transparent;
 }
 .navLinksContainer {
-   @apply flex items-center justify-between gap-x-2 sm:gap-x-3 container mx-auto pt-16 pb-2 px-3 md:p-0;
+   @apply flex items-center justify-between gap-x-2 sm:gap-x-3 container mx-auto pt-16 pb-2 px-1 md:p-0;
 }
 .links {
    @apply flex gap-x-3;
 }
 .navLink {
-   @apply text-3xl md:text-base font-medium md:font-semibold text-right md:text-left;
+   @apply text-3xl md:text-4xl font-medium md:font-semibold text-right md:text-left;
 }
 .logo {
-   @apply text-3xl z-10 font-bold;
+   @apply text-5xl md:text-7xl z-10 font-bold;
 }
 .settingsIcon {
-   @apply w-8 h-8 md:w-6 md:h-6 transition-transform;
+   @apply w-8 h-8 md:w-10 md:h-10 transition-transform;
 }
 .settingsIcon:active {
    @apply rotate-45;

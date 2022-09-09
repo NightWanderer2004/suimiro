@@ -1,26 +1,23 @@
 .article a {
-   @apply text-lg font-semibold text-blue-800/90 hover:underline underline-offset-2;
+   @apply text-4xl font-semibold text-blue-800/90 hover:underline underline-offset-2;
 }
 .article h3 {
-   @apply my-4 text-4xl font-bold break-words;
+   @apply my-4 text-6xl md:text-8xl font-bold break-words;
 }
 .article h4 {
-   @apply mt-8 text-3xl font-semibold;
+   @apply mt-8 text-5xl md:text-6xl font-semibold;
 }
 .article p {
-   @apply mt-6 text-xl font-medium tracking-normal leading-snug md:leading-normal;
+   @apply mt-6 text-2xl font-medium tracking-normal leading-snug md:leading-normal;
 }
 .article p:last-of-type {
    @apply mb-6;
 }
-.article p:first-of-type::first-letter {
-   @apply text-3xl;
-}
 .article img {
-   @apply mt-6 rounded;
+   @apply mt-6;
 }
 .article pre {
-   @apply p-2 mt-6 overflow-scroll bg-gray-100 rounded;
+   @apply p-2 mt-6 overflow-scroll bg-gray-100 text-lg;
    tab-size: 2;
 }
 .article ul,

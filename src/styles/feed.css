@@ -10,11 +10,11 @@
    @apply md:grid-cols-2 md:grid-rows-2 gap-y-4 md:gap-y-3;
 }
 .hints .feed {
-   @apply md:grid-cols-2 md:grid-rows-1 gap-y-2;
+   @apply md:grid-cols-2 md:grid-rows-1 gap-y-3;
 }
 .feedTitle {
-   @apply mb-2 text-2xl font-semibold truncate;
+   @apply mb-2 text-4xl font-semibold truncate;
 }
 .allLink {
-   @apply text-lg font-semibold text-center text-blue-800/90 hover:underline underline-offset-2;
+   @apply text-3xl font-semibold text-center text-blue-800/90 hover:underline underline-offset-2;
 }

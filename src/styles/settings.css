@@ -1,23 +1,23 @@
 .settingsTitle {
-   @apply font-semibold text-2xl mb-2;
+   @apply font-semibold text-4xl md:text-5xl mb-2;
 }
 .darktheme {
    @apply flex flex-col gap-x-2 items-start;
 }
 .darkthemeCheckbox {
-   @apply grid place-content-center accent-dark w-[16px] h-[16px] cursor-pointer;
+   @apply grid place-content-center accent-dark w-[20px] h-[20px] cursor-pointer;
 }
 .darkthemeSwitcher {
    @apply flex items-center gap-x-2 cursor-pointer;
 }
 .darkthemeInfo {
-   @apply text-lg font-semibold;
+   @apply text-2xl md:text-3xl font-semibold;
 }
 .colorsButtons {
-   @apply mb-5 md:mb-8 grid grid-rows-2 lg:grid-rows-1 grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2;
+   @apply mb-5 md:mb-8 grid grid-rows-2 lg:grid-rows-1 grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3;
 }
 .colorsButton {
-   @apply relative h-16 lg:h-28;
+   @apply relative h-10 lg:h-28;
 }
 .colorsButton:hover::before {
    content: "";

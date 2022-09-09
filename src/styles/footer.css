@@ -1,8 +1,8 @@
 .aside {
-   @apply flex items-center text-white border-t-2 border-dark;
+   @apply flex items-center text-white border-t-2 md:border-t-4 border-dark;
 }
 .asideContent {
-   @apply container px-3 py-2 mx-auto font-semibold md:px-8 lg:px-28 text-dark;
+   @apply container md:max-w-none pr-2 pl-0 py-2 mx-auto font-semibold text-dark;
 }
 .asideLinks {
    @apply flex gap-x-3;
@@ -18,11 +18,11 @@
    @apply bg-dark;
 }
 .footerContent {
-   @apply container px-3 py-4 mx-auto md:px-8 lg:px-28;
+   @apply container md:max-w-none pr-2 pl-0 py-4 mx-auto;
 }
 .footerInfo {
-   @apply flex justify-between text-lg font-semibold text-white;
+   @apply flex justify-between items-start text-7xl font-semibold text-white;
 }
 .footerInfo .year {
-   @apply text-dark font-bold p-[2px] bg-white;
+   @apply text-dark font-bold text-2xl pb-10 bg-white;
 }

@@ -1,18 +1,12 @@
 .post,
 .hint {
-   @apply flex flex-col justify-between p-2;
-}
-.post {
-   @apply md:py-4;
-}
-.hint {
-   @apply md:py-3;
+   @apply flex flex-col justify-between break-all md:break-words pb-10 md:pb-14;
 }
 .post:first-child {
    @apply md:row-span-full;
 }
 .post:first-child .postPreview {
-   @apply flex-1 mt-3 text-lg font-medium tracking-normal md:block leading-6;
+   @apply flex-1 mt-3 text-2xl font-medium tracking-normal md:block leading-7;
 }
 .post:hover .postTitle,
 .hint:hover .hintTitle {
@@ -20,13 +14,13 @@
 }
 .postTitle,
 .hintTitle {
-   @apply font-semibold tracking-tight break-words;
+   @apply font-semibold tracking-tight;
 }
 .postTitle {
-   @apply text-3xl md:text-4xl;
+   @apply text-6xl md:text-7xl;
 }
 .hintTitle {
-   @apply text-2xl md:text-3xl;
+   @apply text-5xl md:text-6xl;
 }
 .postPreview {
    @apply hidden;
@@ -36,7 +30,7 @@
 }
 .postDate,
 .postAuthor {
-   @apply text-sm font-medium text-right md:text-base md:text-left;
+   @apply text-sm font-medium tracking-normal text-right md:text-base md:text-left;
 }
 .postAuthor span {
    @apply text-base font-semibold md:text-lg;
