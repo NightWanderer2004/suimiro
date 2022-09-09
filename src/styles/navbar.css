@@ -14,13 +14,13 @@
    @apply flex gap-x-3;
 }
 .navLink {
-   @apply text-3xl md:text-4xl font-medium md:font-semibold text-right md:text-left;
+   @apply text-5xl md:text-4xl font-medium md:font-semibold text-right md:text-left;
 }
 .logo {
    @apply text-5xl md:text-7xl z-10 font-bold;
 }
 .settingsIcon {
-   @apply w-8 h-8 md:w-10 md:h-10 transition-transform;
+   @apply w-9 h-9 md:w-10 md:h-10 transition-transform;
 }
 .settingsIcon:active {
    @apply rotate-45;
@@ -36,7 +36,7 @@
 }
 .burger .menu,
 .burger .cross {
-   @apply pointer-events-none w-9 h-9;
+   @apply pointer-events-none w-12 h-12;
 }
 .burger.active .menu {
    @apply hidden;
