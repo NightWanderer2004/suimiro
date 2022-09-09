@@ -17,7 +17,7 @@
    @apply mb-5 md:mb-8 grid grid-rows-2 lg:grid-rows-1 grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3;
 }
 .colorsButton {
-   @apply relative h-10 lg:h-28;
+   @apply relative h-12 lg:h-28;
 }
 .colorsButton:hover::before {
    content: "";
