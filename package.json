@@ -6,8 +6,7 @@
     "serve": "eleventy --serve",
     "css": "postcss ./src/styles/index.css -o ./dist/index.css -w",
     "build": "rm -rf dist && eleventy && postcss ./src/styles/index.css -o ./dist/index.css",
-    "spell": "yaspeller --only-errors -l 'ru' *.md",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install && npm run build"
+    "spell": "yaspeller --only-errors -l 'ru' *.md"
   },
   "yaspeller": {
     "dictionary": [
