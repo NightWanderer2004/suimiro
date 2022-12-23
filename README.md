@@ -1,6 +1,6 @@
 # **Simple Блог**
 
-## **[Ссылка - Simple-блог](https://simple-w-blog.herokuapp.com/)**
+## **[Ссылка - Simple-блог](https://simple-w-blog.netlify.app/)**
 
 ### Старт сервера для разработки - **`npm run dev`**
 
