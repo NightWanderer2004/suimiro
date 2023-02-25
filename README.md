@@ -1,6 +1,6 @@
-# **Simple Блог**
+# **Suimiro**
 
-## **[Ссылка - Suimiro](https://simple-w-blog.netlify.app/)**
+## **[Ссылка - Suimiro](https://suimiro.me)**
 
 ### Старт сервера для разработки - **`npm run dev`**
 
