@@ -1,5 +1,5 @@
 {
-  "name": "simple-blog",
+  "name": "suimiro",
   "scripts": {
     "start": "node server.js",
     "dev": "concurrently --kill-others \"npm run serve\" \"npm run css\"",

@@ -1,4 +1,4 @@
 module.exports = {
-   logo: 'Simple-блог',
+   logo: 'Suimiro',
    year: new Date().getFullYear(),
 }
