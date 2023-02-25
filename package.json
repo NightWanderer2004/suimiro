@@ -1,12 +1,15 @@
 {
   "name": "suimiro",
+  "homepage": "https://nightwanderer2004.github.io/suimiro/",
   "scripts": {
     "start": "node server.js",
     "dev": "concurrently --kill-others \"npm run serve\" \"npm run css\"",
     "serve": "eleventy --serve",
     "css": "postcss ./src/styles/index.css -o ./dist/index.css -w",
     "build": "rm -rf dist && eleventy && postcss ./src/styles/index.css -o ./dist/index.css",
-    "spell": "yaspeller --only-errors -l 'ru' *.md"
+    "spell": "yaspeller --only-errors -l 'ru' *.md",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "yaspeller": {
     "dictionary": [
@@ -21,6 +24,7 @@
     "concurrently": "^7.2.0",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.13",
     "postcss-cli": "^9.1.0",
     "postcss-import": "^14.1.0",
