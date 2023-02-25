@@ -11,7 +11,7 @@
    @apply flex items-center justify-between gap-x-2 sm:gap-x-3 container mx-auto pt-16 pb-2 px-1 md:p-0;
 }
 .links {
-   @apply flex gap-x-3;
+   @apply flex gap-x-6;
 }
 .navLink {
    @apply text-4xl font-medium md:font-semibold text-right md:text-left;
