@@ -3,7 +3,8 @@ module.exports = {
    theme: {
       extend: {
          colors: {
-            dark: '#101010',
+            dark: '#1c1c1c',
+            light: '#e5e5e5',
          },
       },
       fontFamily: {

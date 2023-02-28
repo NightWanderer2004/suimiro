@@ -1,34 +1,34 @@
 body.dark {
-   @apply bg-dark text-white/95;
+   @apply bg-dark text-light;
 }
 
 /* Чекбокс */
 body.dark .darkthemeCheckbox {
-   @apply accent-white;
+   @apply accent-light;
 }
 
 /* Навбар */
 body.dark .navbar {
-   @apply border-white;
+   @apply border-light;
 }
 body.dark .navLinks {
-   @apply bg-dark md:bg-transparent border-white md:border-transparent;
+   @apply bg-dark md:bg-transparent border-light md:border-transparent;
 }
 
 /* Цвета */
 body.dark .colorsButton.transparent:hover::before {
    content: "";
-   @apply bg-white/70;
+   @apply bg-light/70;
 }
 body.dark .colorsButton.active.transparent::before {
    content: "";
-   @apply bg-white;
+   @apply bg-light;
 }
 body.dark .transparent {
-   @apply text-white border-white;
+   @apply text-light border-light;
 }
 body.dark .stone {
-   @apply bg-zinc-50 text-dark;
+   @apply bg-light text-dark;
 }
 body.dark .colorsButton.stone:hover::before {
    content: "";
@@ -56,7 +56,8 @@ body.dark .allLink {
 }
 
 /* Пост/Совет */
-body.dark .main.article a:first-child {
+body.dark .main.article a:first-child,
+body.dark .main.article a:last-child {
    @apply text-blue-600/90;
 }
 body.dark .main.article pre {
@@ -65,16 +66,16 @@ body.dark .main.article pre {
 
 /* Футер */
 body.dark .aside {
-   @apply border-white;
+   @apply border-light;
 }
 body.dark .footer {
-   @apply bg-white;
+   @apply bg-light;
 }
 body.dark .footerInfo {
    @apply text-dark;
 }
 body.dark .footerInfo .year {
-   @apply text-white bg-dark;
+   @apply text-light bg-dark;
 }
 
 /* ---Burger--- */
