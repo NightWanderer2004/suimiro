@@ -14,7 +14,7 @@
    @apply flex gap-x-6;
 }
 .navLink {
-   @apply text-4xl font-medium md:font-semibold text-right md:text-left;
+   @apply text-4xl font-medium md:font-semibold text-right md:text-left hover:underline underline-offset-2;
 }
 .logo {
    @apply text-4xl md:text-7xl z-10 font-bold;
