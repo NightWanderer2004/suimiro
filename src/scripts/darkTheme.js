@@ -14,7 +14,6 @@ let theme = localStorage.getItem('theme')
 
 const setDarkTheme = () => {
    themeSwitcher.checked = true
-   themeInfo.innerHTML = 'Вкл'
    document.body.classList.add('dark')
 }
 const setSystemTheme = () => {
@@ -23,22 +22,20 @@ const setSystemTheme = () => {
       document.body.classList.add('dark')
 }
 
-// Проверка, включена ли тёмная тема
+// Does dark theme enabled?
 if (theme === 'dark') setDarkTheme()
 else if (theme === 'system') setSystemTheme()
 
-// Переклюяает тему
+// Switches dark theme
 themeSwitcher.onchange = () => {
    if (theme === 'light' || theme === 'system')
       document.body.classList.add('dark')
    else document.body.classList.remove('dark')
 
    if (themeSwitcher.checked) {
-      themeInfo.innerHTML = 'Вкл'
       themeSwitcherSystem.checked = false
       theme = 'dark'
    } else {
-      themeInfo.innerHTML = 'Выкл'
       theme = 'light'
    }
 
@@ -52,7 +49,6 @@ themeSwitcherSystem.onchange = () => {
 
    if (themeSwitcherSystem.checked) {
       themeSwitcher.checked = false
-      themeInfo.innerHTML = 'Выкл'
       theme = 'system'
    } else theme = 'light'
 
