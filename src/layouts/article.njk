@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
    <head>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,12 +14,7 @@
       <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
       <link rel="stylesheet" href="/index.css" />
       <title>
-         {% if tag === 'hint' %}
-         Совет
-         {% elif tag === 'post' %}
-         Пост
-         {% endif %}
-         - Suimiro
+         Suimiro | {{ title }}
       </title>
    </head>
    
@@ -36,9 +31,9 @@
       <div class="wrapper">
          {% include 'navbar.njk' %}
          <article class="main article">
-            <a href="/">На главную </a>
+            <a href="/">Go back</a>
             {{ content | safe }}
-            <a href="/">На главную </a>
+            <a href="/">Go back</a>
          </article>
          {% include 'footer.njk' %}
       </div>

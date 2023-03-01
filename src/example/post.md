@@ -1,25 +1,25 @@
 ---
-title: ЗАГОЛОВОК ПОСТА
-preview: ПРЕВЬЮ ПОСТА
+title: POST TITLE
+preview: POST PREVIEW
 date: 2012-12-12
-author: АВТОР
+author: AUTHOR NAME
 tag: post
 ---
 
 ### {{title}} <!-- h3 -->
 
-#### ПОДЗАГОЛОВОК <!-- h4 -->
+#### SUBTITLE <!-- h4 -->
 
-## текст поста <!-- p -->
+BODY <!-- p -->
 
 <!-- pre -->
 
 ```
-скрипт
+script
 ```
 
 <!-- ul/ol -->
 
-1. один <!-- li -->
-2. два <!-- li -->
-3. три <!-- li -->
+1. one <!-- li -->
+2. two <!-- li -->
+3. three <!-- li -->

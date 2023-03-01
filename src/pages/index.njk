@@ -1,15 +1,16 @@
 ---
 layout: page.njk
-pageTitle: Главная
+pageTitle: Home
+tabTitle: Suimiro | Home
 permalink: index.html
 ---
 
 {% set posts = collections.posts.reverse() | limit(3) %}
 {% set hints = collections.hints.reverse() | limit(3) %}
 
-<h2 class="title">Главная</h2>
+<h2 class="title">{{ pageTitle }}</h2>
 <div class="posts">
-   <h3 class="feedTitle">Посты:</h3>
+   <h3 class="feedTitle">Posts:</h3>
    <div class="feed">
       {% for post in posts %}
       <a href="{{ post.url }}" class="post">
@@ -18,7 +19,7 @@ permalink: index.html
          <div>
             <p class="postDate">
                {{
-                  post.data.date.toLocaleDateString("ru", {
+                  post.data.date.toLocaleDateString("en", {
                      year: "numeric",
                      month: "long",
                      day: "numeric"
@@ -32,17 +33,16 @@ permalink: index.html
       </a>
       {% endfor %}
    </div>
-   <a class="allLink" href="/posts">Показать все</a>
+   <a class="allLink" href="/posts">See all</a>
 </div>
 <div class="hints">
-   <h3 class="feedTitle">Советы:</h3>
+   <h3 class="feedTitle">Hints:</h3>
    <div class="feed">
       {% for hint in hints %}
       <a href="{{ hint.url }}" class="hint">
          <h3 class="hintTitle">{{ hint.data.title }}</h3>
-         <p class="hintPreview">{{ hint.data.preview }}</p>
       </a>
       {% endfor %}
    </div>
-   <a class="allLink" href="/hints">Показать все</a>
+   <a class="allLink" href="/posts">See all</a>
 </div>

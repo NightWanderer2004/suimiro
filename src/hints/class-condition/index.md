@@ -1,22 +1,22 @@
 ---
-title: Класс по условию
+title: Classes by condition
 date: 2022-06-19
 tag: hint
 ---
 
 ### {{title}}
 
-Все мы знаем, что у одного элемента может быть несколько классов, это очевидно
+All we know that one element can have multiple classes, this is obvious
 
 ```js
 <button class="btn boxItem">BTN</button>
 ```
 
-Но если нам нужно добавлять класс 'active' по нажатию, то как быть?
+But if we need to add a class 'active' by clicking, then what?
 
-#### Простой JS
+#### Vanilla JS
 
-Добавить через classList.add('active') или же через classList.toggle('active'):
+Adding class with classList.add('active') or classList.toggle('active'):
 
 ```js
 const btn = document.querySelector(".btn");
@@ -24,15 +24,15 @@ const btn = document.querySelector(".btn");
 btn.onclick = (e) => e.target.classList.add("active");
 ```
 
-#### Как быть в React?
+#### What about React?
 
-Если с React использовать способ, который описан выше, то будет много лишнего кода:
+If you try to use the same methon upper in React, you will get a lot of useless code:
 
-1. Создать ref элемента кнопки
-2. После этого брать ref и получать атрибут className
-3. Менять состояние className
+1. Create ref of button element
+2. After that get ref and get attribute className
+3. Change className state
 
-Я считаю, что это сложно, поэтому показываю хороший способ:
+I think it's hard... So I show you a good way:
 
 ```js
 const [isBtnActive, setIsBtnActive] = useState(false)
@@ -41,10 +41,10 @@ const toggleBtn = () => setIsBtnActive(!isBtnActive)
 <button className={`btn boxItem ${isBtnActive ? 'active' : ''}`} onClick=(toggleBtn)}>
 ```
 
-Уже поняли?
+I just used template strings to create a condition right inside the className attribute
 
-Я использовал template strings для того, чтобы создать условие прямо внутри атрибута className
+Like I avoided unnecessary code to get ref and etc, you know.
 
-То есть я избежал лишних срок кода на получение ref и так далее
+#### Conclusion
 
-По сути в обычном JS тоже можно провернуть такой способ, но как бы это странно не звучало, работать он не будет, пока не будет вызван перерендер элемента
+In Vanilla JS you also can use React version, but it will not work until you call a re-render of the element.

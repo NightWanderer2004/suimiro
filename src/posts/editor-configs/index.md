@@ -1,20 +1,20 @@
 ---
-title: Editorconfig и Prettier, зачем это?
-preview: Давайте обсудим, зачем использовать утилиты для форматирования текста и как это помогает в совместной разработке?
+title: Editorconfig and Prettier, what are they?
+preview: Let's discuss why you should use text formatting utilities and how it helps in collaborative development?
 date: 2022-06-18
-author: Эдуард Поверин
+author: Eduard Povierin
 tag: post
 ---
 
 ### {{title}}
 
-Editorconfig и Prettier - это утилиты для форматирования текста
+Editorconfig and Prettier - it's utilities that help you to format text.
 
 #### Editorconfig
 
-В отличие от Prettier, editorconfig больше подходит для простого текста, а Prettier создавался именно для форматирования кода
+Unlike Prettier, editorconfig is more suitable for plain text, and Prettier was created specifically for code formatting.
 
-Файл .editorconfig может выглядеть примерно так:
+File .editorconfig can look like this:
 
 ```
 root = true
@@ -31,17 +31,17 @@ indent_style = space
 indent_size = 2
 ```
 
-Эта утилита позволяет стандартизировать стиль текста (размер таба, удаление лишних пробелов и тд.). Также можно указывать стандарты для отдельных типов файлов, указав в конфиге тип файла в квадратных скобках.
+This tool allows you to standardize the style of text (tab size, removing empty spaces, etc.). You can also specify standards for individual file types by specifying the file type in square brackets in the config.
 
-Полную документацию можно будет узнать на сайте [editorconfig](https://editorconfig.org/)
+Full documentation can be found on the [editorconfig](https://editorconfig.org/)
 
 #### Prettier
 
-Наверное лучший плагин для редактора в плане форматирования кода (HTML, CSS, JS, JSON, MD...)
+Maybe the best plugin for the editor in terms of code formatting (HTML, CSS, JS, JSON, MD...)
 
-Если вы пользуетесь VsCode и установили Prettier, то в настройках редактора появится вкладка с настройками Prettier. Лично мне нравиться, когда в JS отсутствуют ";", с помощью Prettier я могу настроить свой редактор так, что при сохранении файла у меня будет происходить форматирование файла по правилам, которые я указал, например: отключение ";" и одинарные кавычки
+If you use Visual Studio Code and have Prettier installed, then in the editor settings there will be a tab with Prettier settings. Personally, I like it when there are no ";" in JS, with Prettier I can configure my editor so that when I save the file, formatting of the file will occur according to the rules that I specified.
 
-Также само, как и у editorconfig, Prettier тоже можно настроить через конфиг .prettierrc:
+The same as a editorconfig, Prettier can be configured through the config file .prettierrc:
 
 ```
 {
@@ -58,8 +58,10 @@ indent_size = 2
 }
 ```
 
-Я люблю эту возможность настройки через конфиг прямо в проекте. Знаете почему?
+Here is a full list of [options](https://prettier.io/)
 
-#### Итог
+#### Сonclusion
 
-Когда проект разрабатывают больше чем один человек, хорошо бы было иметь такие конфиги, чтобы у всех членов команды были одни и те же стандарты форматирования. Используйте эти инструменты и ваш проект будет чист😉
+I love this ability to configure through the config right in the project.
+
+When projects are developed by more than one person, it would be nice to have such configs so that all members of the team have the same formatting standards. Use these tools and your project will be clean.😉
