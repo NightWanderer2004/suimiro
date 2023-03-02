@@ -1,8 +1,8 @@
 .postsList,
 .hintsList {
-   @apply grid grid-flow-row gap-3 md:grid-cols-2 lg:grid-cols-3;
+   @apply grid grid-flow-row gap-3 sm:grid-cols-2 lg:grid-cols-3;
 }
 .postLink,
 .hintLink {
-   @apply flex flex-col font-semibold text-5xl md:text-6xl w-full h-full hover:underline underline-offset-2;
+   @apply flex flex-col font-semibold text-5xl sm:text-6xl w-full h-full hover:underline underline-offset-2;
 }

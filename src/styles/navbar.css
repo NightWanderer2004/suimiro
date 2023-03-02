@@ -1,32 +1,32 @@
 .navbar {
-   @apply flex items-center h-16 border-b-2 md:border-b-4 border-dark md:h-20 bg-transparent;
+   @apply flex items-center h-16 border-b-2 sm:border-b-4 border-dark sm:h-20 bg-transparent;
 }
 .navbarContent {
-   @apply container md:max-w-none flex items-center justify-between md:justify-start w-full px-1 mx-auto gap-x-6 md:gap-x-8;
+   @apply container sm:max-w-none flex items-center justify-between sm:justify-start w-full px-1 mx-auto gap-x-6 sm:gap-x-8;
 }
 .navLinks {
-   @apply absolute md:static right-0 -top-full w-full flex-1 border-b-2 border-dark md:border-transparent bg-white md:bg-transparent;
+   @apply absolute sm:static right-0 -top-full w-full flex-1 border-b-2 border-dark sm:border-transparent bg-white sm:bg-transparent;
 }
 .navLinksContainer {
-   @apply flex items-center justify-between gap-x-2 sm:gap-x-3 container mx-auto pt-16 pb-2 px-1 md:p-0;
+   @apply flex items-center justify-between gap-x-2 sm:gap-x-3 container mx-auto pt-16 pb-2 px-1 sm:p-0;
 }
 .links {
    @apply flex gap-x-6;
 }
 .navLink {
-   @apply text-4xl font-medium md:font-semibold text-right md:text-left hover:underline underline-offset-2;
+   @apply text-4xl font-medium sm:font-semibold text-right sm:text-left hover:underline underline-offset-2;
 }
 .logo {
-   @apply text-5xl md:text-7xl z-10 font-bold;
+   @apply text-5xl sm:text-7xl z-10 font-bold;
 }
 .settingsIcon {
-   @apply w-9 h-9 md:w-10 md:h-10 transition-transform;
+   @apply w-9 h-9 sm:w-10 sm:h-10 transition-transform;
 }
 .settingsIcon:active {
    @apply rotate-45;
 }
 .burger {
-   @apply md:hidden z-10;
+   @apply sm:hidden z-10;
 }
 .burger.active + .navLinks {
    @apply top-0;

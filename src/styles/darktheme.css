@@ -2,12 +2,12 @@ body.dark {
    @apply bg-dark text-light;
 }
 
-/* Чекбокс */
+/* Checkbox */
 body.dark .darkthemeCheckbox {
    @apply accent-light;
 }
 
-/* Навбар */
+/* Navbar */
 body.dark .navbar {
    @apply border-light;
 }
@@ -15,7 +15,7 @@ body.dark .navLinks {
    @apply bg-dark md:bg-transparent border-light md:border-transparent;
 }
 
-/* Цвета */
+/* Colors */
 body.dark .colorsButton.transparent:hover::before {
    content: "";
    @apply bg-light/70;
@@ -50,21 +50,21 @@ body.dark .lightviolet {
    @apply bg-opacity-90;
 }
 
-/* Фид */
+/* Feed */
 body.dark .allLink {
    @apply text-blue-600/90;
 }
 
-/* Пост/Совет */
+/* Post/Hint */
 body.dark .main.article a:first-child,
 body.dark .main.article a:last-child {
    @apply text-blue-600/90;
 }
 body.dark .main.article pre {
-   @apply bg-zinc-800;
+   @apply bg-zinc-700/60;
 }
 
-/* Футер */
+/* Footer */
 body.dark .aside {
    @apply border-light;
 }
