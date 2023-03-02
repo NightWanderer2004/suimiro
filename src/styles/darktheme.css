@@ -12,7 +12,7 @@ body.dark .navbar {
    @apply border-light;
 }
 body.dark .navLinks {
-   @apply bg-dark md:bg-transparent border-light md:border-transparent;
+   @apply bg-dark sm:bg-transparent border-light sm:border-transparent;
 }
 
 /* Colors */
