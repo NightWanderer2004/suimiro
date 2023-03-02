@@ -1,16 +1,16 @@
 ---
-title: CSS модули
+title: CSS modules
 date: 2022-06-27
 tag: hint
 ---
 
 ### {{title}}
 
-Давайте посмотрим как разбивать стили на модули. Покажу как я делаю это в React и ванильном CSS
+Let's see how can we split styles into modules. I will show you how I do it in React and vanilla CSS.
 
-#### Ванильный CSS
+#### Vanilla CSS
 
-Должна быть папка _styles_, в которой будут все CSS файлы. Есть _index.css_, внутри он может выглядеть так:
+Needs to be a folder called **_styles_**, in which all CSS files will be. There is **_index.css_**, inside it can look like this:
 
 ```
 @import "./colors.css";
@@ -25,11 +25,11 @@ tag: hint
 @import "./article.css";
 ```
 
-Здесь происходит импорт всех _.css_ файлов. То есть, нужно просто создать файл _.css_, в котором как и обычно пишутся стили, а потом просто в _index.css_ сделать импорт, ВСЁ
+Here we import all _.css_ files. So, you just need to create a **_.css_** file in which you write styles as usual, and then just import it in **_index.css_**, THAT'S IT.
 
 #### React
 
-В React можно использовать файлы с расширением _.module.css_ и импортировать их уже в комнонентах:
+In React you can use **_.module.css_** files and import them already in components:
 
 ```
 import React from 'react'
@@ -39,21 +39,11 @@ const Hero = () => {
    return (
       <div className={s.main}>
          <div className={s.tagline}>
-            <span>At Tokners we are</span>
             <h1>
-               Reimagining social <br />
-               media through the <br />
-               power of the blockchain.
+               Hello :)
             </h1>
-            <p>
-               We are creating social media 3.0 with influencers, celebrities and creators being
-               able to launch their own digital currency by simply creating a profile with media
-               content posted as Non fungible Tokens that can be owned and traded on the Tknrs
-               network
-            </p>
-            <a href='#about'>Learn More</a>
+            <p>Suimiro blog</p>
          </div>
-         <img src='/assets/img/home/main-img.png' loading='lazy' alt='' />
       </div>
    )
 }
@@ -61,13 +51,13 @@ const Hero = () => {
 export default Hero
 ```
 
-Вот обычный код React компоненты, _'s'_ в _import s from '...'_ это как переменная (может быть любое название), которую потом нужно будет указывать в _className_ элемента
+It's basic React component. **_'s'_** in **_import s from '...'_** is just a variable (can be any name), which you will then need to specify in the _className_ element.
 
 ```
 className={s.tagline}
 ```
 
-tagline это название класса. CSS будет выглядеть так:
+tagline it's class name in _hero.module.css_.
 
 ```
 .main .tagline {
@@ -77,8 +67,8 @@ tagline это название класса. CSS будет выглядеть 
 }
 ```
 
-#### Итог
+#### Conclusion
 
-Ничего сложного в этих двух вариантах нет. В CSS нужно просто сделать _@import_, а в React _import s from '...'_
+Nothing complicated in these two options. In CSS you just need to do **_@import_**, and in React **_import s from '...'_**.
 
-Плюс в React финальная версия названия класса будет примерно такой: _hero_tagline\_\_K9D64_, React делает так, чтобы этот класс всегда был уникальным и не перемешивал стили с другими классами
+**Note:** In React final version of class name will be something like this: **_hero_tagline\_\_K9D64_**, React makes it so that this class is always unique and does not mix styles with other classes.

@@ -6,11 +6,14 @@ tag: hint
 
 ### {{title}}
 
-Давайте представим, что у нас есть функция, которая делает запрос на сервер. Очевидно, что данные подгрузятся не сразу, поэтому мы должны создать 2 компоненты: первая - список с данными, вторая - loader или placeholder.
+Let's imagine that we have a function that makes a request to the server. Obviously, the data will not load immediately, so we need to create 2 components:
 
-По сути, каждый раз, когда программа запускается, должно быть условие: подгрузились ли данные или нет?
+-  the first is a list with data
+-  the second is a loader or placeholder.
 
-#### Как можно, но не эффективно
+When app starts, we need to show a loader, and when the data is loaded, we need to show a list.
+
+#### How can we do it, but not effectively
 
 ```js
 if (loading) {
@@ -20,16 +23,16 @@ if (loading) {
 }
 ```
 
-Но не кажется ли вам, что этот код громоздкий? Я не люблю такие решения и предпочитаю делать всё намного короче:
+A lot of code for such a simple task. But what if we can do it in one line?
 
-#### Как нужно
+#### Short and effective
 
 ```js
 loading ? <Loader /> : <List />;
 ```
 
-#### Итог
+#### Conclusion
 
-Всегда старайтесь использовать тернарные операторы в ситуациях, похожих на эту. Возможен ещё вариант с (if else), где можно не ставить фигурные скобки, если тело будет в 1 строку.
+Always try to use ternary operators in situations like this. Another option is (if else), where you can not put curly braces if the body is in 1 line.
 
-Но при каждом разе задумайтесь, а имеет ли смысл так делать? Не ухудшиться ли читаемость кода?
+But every time you do it, think about, does it make sense to do so? Will the code readability worsen?
