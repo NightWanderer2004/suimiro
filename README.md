@@ -1,64 +1,56 @@
 # **Suimiro**
 
-## **[Ссылка - Suimiro](https://suimiro.me)**
+## **[Link - Suimiro](https://suimiro.me/)**
 
-### Старт сервера для разработки - **`npm run dev`**
+### Starting the development server - **`npm run dev`**
 
-## Как добавить пост/совет?
+## How to add a post/tip?
 
--  клонировать репозиторий
--  создать новую ветку
--  в папку posts или hints добавить папку и дать название
--  в папке вашего поста/совета создать файл index.md
--  (если вы хотите добавить пост)в начале файла index.md добавить:
-
+-  clone the repository
+-  create a new branch
+-  in the posts or hints folder, add a new folder and name it
+-  in the folder of your post/tip create a file [index.md](http://index.md/)
+-  (if you want to add a post) at the beginning of the [index.md](http://index.md/) file add:
    ```
    ---
-   title: ЗАГОЛОВОК ПОСТА
-   preview: ПРЕВЬЮ ПОСТА (текст)
-   date: ДАТА (формат: YYYY-MM-DD)
-   author: АВТОР
+   title: POST TITLE
+   preview: POST PREVIEW (text)
+   date: DATE (format: YYYY-MM-DD)
+   author: AUTHOR
    tag: post
    ---
+
    ```
-
--  (если вы хотите добавить совет) в начале файла index.md добавить:
-
+-  (if you want to add a tip) at the beginning of the [index.md](http://index.md/) file add:
    ```
    ---
-   title: ЗАГОЛОВОК СОВЕТА
-   date: ДАТА (формат: YYYY-MM-DD)
+   title: TIP TITLE
+   date: DATE (format: YYYY-MM-DD)
    tag: hint
    ---
-   ```
 
--  сделать проверку орфографии:
+   ```
+-  do a spell check:
    ```
    npm run spell
+
    ```
--  сделать PR (pull request)
+-  make a PR (pull request)
 
 ---
 
--Все правила стиля кода описаны в конфигах:
-
+-  All code style rules are described in the configs:
 -  **[.editorconfig]**
 -  **[.prettierrc]**
-
--Сайт сделан на движке **[eleventy](https://www.11ty.dev/)**
-
--Для CSS используем **[tailwindCSS](https://tailwindcss.com/)**
-
--Имена классам даём в стиле **camelCase**
+-  The site is made on the **[eleventy](https://www.11ty.dev/)** engine
+-  For CSS we use **[tailwindCSS](https://tailwindcss.com/)**
+-  We give class names in the **camelCase** style
 
 ---
 
-### Ссылки на расширения для vsCode:
+### Links to extensions for vsCode:
 
 -  **[editorconfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)**;
-
 -  **[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)**;
-
--  Подсказки для **[TailwindCSS](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)**;
-
--  Подсветка синтаксиса **[Nunjucks](https://marketplace.visualstudio.com/items?itemName=ronnidc.nunjucks)**;
+-  Tips for **[TailwindCSS](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)**;
+-  Syntax highlighting for **[Nunjucks](https://marketplace.visualstudio.com/items?itemName=ronnidc.nunjucks)**;
