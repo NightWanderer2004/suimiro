@@ -773,7 +773,7 @@ body.dark .navLinks{
    background-color: rgb(18 18 18 / var(--tw-bg-opacity));
 }
 
-@media (min-width: 768px){
+@media (min-width: 640px){
 
    body.dark .navLinks{
       border-color: transparent;
@@ -2238,6 +2238,10 @@ body{
       border-color: transparent;
    }
 
+   .sm\:bg-transparent{
+      background-color: transparent;
+   }
+
    .sm\:text-left{
       text-align: left;
    }
@@ -2299,10 +2303,6 @@ body{
 
    .md\:border-t-4{
       border-top-width: 4px;
-   }
-
-   .md\:bg-transparent{
-      background-color: transparent;
    }
 
    .md\:text-8xl{
