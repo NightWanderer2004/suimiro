@@ -4,6 +4,7 @@ module.exports = config => {
    config.addPassthroughCopy('src/posts')
    config.addPassthroughCopy('src/assets')
    config.addPassthroughCopy('src/scripts')
+   config.addPassthroughCopy('src/CNAME')
 
    return {
       dir: {
