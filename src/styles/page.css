@@ -1,6 +1,9 @@
 .main {
    @apply container md:max-w-none flex-1 pr-4 pl-0 py-5 mx-auto;
 }
+.main.article {
+   @apply pl-2;
+}
 .main .title {
-   @apply mb-4 text-6xl font-bold md:mb-10 md:text-7xl;
+   @apply mb-4 text-6xl font-bold md:mb-10;
 }

@@ -1,6 +1,6 @@
 .post,
 .hint {
-   @apply flex flex-col justify-between break-all md:break-words pb-10 md:pb-14;
+   @apply flex flex-col justify-between break-words pb-10 md:pb-14;
 }
 .post:first-child {
    @apply md:row-span-full;
