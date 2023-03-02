@@ -1,32 +1,38 @@
 ---
-title: Какой дистрибутив Linux признан самым лёгким?
-preview: Стал известен один из самых лёгких дистрибутивов Linux в 2022 году.
+title: What is Tiny Core Linux?
+preview: One of the lightest Linux distributions in 2022 has been announced.
 date: 2022-06-13
-author: Валерий Васянович
+author: Valerii Vasianovych
 tag: post
 ---
 
 ### {{ title }}
 
-Tiny Core
+#### Tiny Core
 
-Готовьтесь прийти в восторг от Tiny Core. Бьюсь об заклад, даже самое маленькое приложение для редактирования изображений на Windows будет тяжелее, чем Tiny Core Linux. Да, его вес всего лишь 16 МБ! Удивлены? Загрузка небольшого видео низкого качества занимает и то больше времени, чем загрузка Tiny Core Linux.
+Be ready to be amazed by Tiny Core. I bet even the smallest Windows image editor will be heavier than Tiny Core Linux. Yes, its weight is only 16 MB! Are you surprised? Downloading a low-quality video takes longer than downloading Tiny Core Linux.
 
-О размере дистрибутива мы поговорили, теперь перейдем к тому, что поразит вас: к тому, что находится внутри. Система поставляется только с самыми необходимыми программами и минималистичным интерфейсом. Если у вас остался очень древний компьютер, установите Tiny Core и познакомьтесь с этим маленьким чудом. Он загружается быстрее, чем любая другая известная ОС.
+About size of the distribution, we talked, now let's talk about what will amaze you: about what is inside. The system is delivered only with the most necessary programs and a minimalist interface. If you have a very old computer, install Tiny Core and get acquainted with this little wonder. It loads faster than any other known OS.
 
 <img src="img/tiny-desktop.png" alt="desktop" width="559px"/>
 
-Tiny Core Linux основан на дистрибутиве Damn Small, но на данный момент он полностью независим. По умолчанию, Tiny Core идет вместе с графическим интерфейсом FLTK/FKWM и BusyBox. Многих вещей вам будет не хватать, но не волнуйтесь, если хотите, вы можете установить все это вручную.
+Tiny Core Linux is based on the Damn Small distribution, but currently it is completely independent. By default, Tiny Core comes with the FLTK / FKWM graphical interface and BusyBox. You will not have many things, but do not worry, if you want, you can install everything manually.
 
 <img src="img/tiny-terminal.png" alt="terminal" width="559px"/>
 
-Существует три версии Tiny Core: Core, Tiny Core и CorePlus. Первая версия содержит только CLI (Интерфейс командной строки) и с ним смогут работать только опытные/продвинутые пользователи. Текущая версия Core весит всего лишь 9 МБ. :)
+#### Types of Tiny Core Linux
 
-Tiny Core предназначен для обычного пользователя, который знаком с GUI (Графический интерфейс пользователя). Текущая версия TinyCore имеет размер всего 16 МБ.
+We have a 3 version of Tiny Core: Core, Tiny Core and CorePlus.
 
-Core Plus — это установочный образ, а не дистрибутив. Рекомендуется новым пользователям, у которых есть доступ только к беспроводной сети или тем, кто использует не английскую раскладку клавиатуры. Дистрибутив включает в себя базовую Core System с утилитами для настройки системы: выбор из 7 менеджеров окон, поддержку беспроводной связи через множество firmware файлов и ndlswrapper, поддержку неанглийской раскладки и инструмент для ремастеринга. Размер текущей версии CorePlus — всего лишь 72 МБ.
+-  The first version contains only CLI (Command Line Interface) and with it only experienced / advanced users will be able to work. The current version of Core weighs only 9 MB. :)
 
-Минимальные системные требования для Tiny Core Linux:
+-  Tiny Core is designed for the average user who is familiar with GUI (Graphical User Interface). The current version of TinyCore has a size of only 16 MB.
 
-RAM: 46 МБ (рекомендуется 64 МБ)
-CPU: Pentium 2
+-  Core Plus - it's an installation file, not a distribution. It is recommended for new users who only have access to a wireless network or those who use a non-English keyboard layout. The distribution includes the basic Core System with utilities for configuring the system: choosing from 7 window managers, support for wireless communication through many firmware files and ndlswrapper, support for non-English keyboard layout and remastering tool. The current version of CorePlus is 72 MB.
+
+#### Minimal system requirements for Tiny Core Linux:
+
+-  RAM: 46 Mb (recomended 64 MB)
+-  CPU: Pentium 2
+
+So here is a link: [tinycorelinux.net](http://www.tinycorelinux.net/)

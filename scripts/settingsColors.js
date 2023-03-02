@@ -15,7 +15,7 @@ const content = [...feed, ...lists]
 const primaryColor = localStorage.getItem('primaryColor')
 const secondaryColor = localStorage.getItem('secondaryColor')
 
-// Устанавливает цвета на элементы
+// Set uo colors on elements
 content.forEach(el => {
    const isPost =
       el.classList.contains('post') || el.classList.contains('postLink')
@@ -26,7 +26,7 @@ content.forEach(el => {
    el.classList.add(bgColor)
 })
 
-// Устанавливает класс на кликнутый элемент
+// Set up class on clicked element
 primaryBtns.forEach(el => {
    if (primaryColor === el.classList[el.classList.length - 1])
       el.classList.add('active')

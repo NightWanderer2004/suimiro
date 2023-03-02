@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
    <head>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,10 +14,7 @@
       <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
       <link rel="stylesheet" href="/index.css" />
       <title>
-         
-         Совет
-         
-         - Suimiro
+         Suimiro | CSS modules
       </title>
    </head>
    
@@ -44,8 +41,8 @@
       <div class="navLinks">
          <ul class="navLinksContainer">
             <li class="links">
-               <a class="navLink" href="/posts">посты</a>
-               <a class="navLink" href="/hints">советы</a>
+               <a class="navLink" href="/posts">posts</a>
+               <a class="navLink" href="/hints">hints</a>
             </li>
             <li>
                <a class="navLink" href="/settings">
@@ -58,11 +55,11 @@
 </header>
 
          <article class="main article">
-            <a href="/">На главную </a>
-            <h3>CSS модули</h3>
-<p>Давайте посмотрим как разбивать стили на модули. Покажу как я делаю это в React и ванильном CSS</p>
-<h4>Ванильный CSS</h4>
-<p>Должна быть папка <em>styles</em>, в которой будут все CSS файлы. Есть <em>index.css</em>, внутри он может выглядеть так:</p>
+            <a href="/">Go back</a>
+            <h3>CSS modules</h3>
+<p>Let's see how can we split styles into modules. I will show you how I do it in React and vanilla CSS.</p>
+<h4>Vanilla CSS</h4>
+<p>Needs to be a folder called <strong><em>styles</em></strong>, in which all CSS files will be. There is <strong><em>index.css</em></strong>, inside it can look like this:</p>
 <pre><code>@import &quot;./colors.css&quot;;
 @import &quot;./settings.css&quot;;
 @import &quot;./navbar.css&quot;;
@@ -74,9 +71,9 @@
 @import &quot;./categoryPage.css&quot;;
 @import &quot;./article.css&quot;;
 </code></pre>
-<p>Здесь происходит импорт всех <em>.css</em> файлов. То есть, нужно просто создать файл <em>.css</em>, в котором как и обычно пишутся стили, а потом просто в <em>index.css</em> сделать импорт, ВСЁ</p>
+<p>Here we import all <em>.css</em> files. So, you just need to create a <strong><em>.css</em></strong> file in which you write styles as usual, and then just import it in <strong><em>index.css</em></strong>, THAT'S IT.</p>
 <h4>React</h4>
-<p>В React можно использовать файлы с расширением <em>.module.css</em> и импортировать их уже в комнонентах:</p>
+<p>In React you can use <strong><em>.module.css</em></strong> files and import them already in components:</p>
 <pre><code>import React from 'react'
 import s from '../../styles/homePage/hero.module.css'
 
@@ -84,42 +81,32 @@ const Hero = () =&gt; {
    return (
       &lt;div className={s.main}&gt;
          &lt;div className={s.tagline}&gt;
-            &lt;span&gt;At Tokners we are&lt;/span&gt;
             &lt;h1&gt;
-               Reimagining social &lt;br /&gt;
-               media through the &lt;br /&gt;
-               power of the blockchain.
+               Hello :)
             &lt;/h1&gt;
-            &lt;p&gt;
-               We are creating social media 3.0 with influencers, celebrities and creators being
-               able to launch their own digital currency by simply creating a profile with media
-               content posted as Non fungible Tokens that can be owned and traded on the Tknrs
-               network
-            &lt;/p&gt;
-            &lt;a href='#about'&gt;Learn More&lt;/a&gt;
+            &lt;p&gt;Suimiro blog&lt;/p&gt;
          &lt;/div&gt;
-         &lt;img src='/assets/img/home/main-img.png' loading='lazy' alt='' /&gt;
       &lt;/div&gt;
    )
 }
 
 export default Hero
 </code></pre>
-<p>Вот обычный код React компоненты, <em>'s'</em> в <em>import s from '...'</em> это как переменная (может быть любое название), которую потом нужно будет указывать в <em>className</em> элемента</p>
+<p>It's basic React component. <strong><em>'s'</em></strong> in <strong><em>import s from '...'</em></strong> is just a variable (can be any name), which you will then need to specify in the <em>className</em> element.</p>
 <pre><code>className={s.tagline}
 </code></pre>
-<p>tagline это название класса. CSS будет выглядеть так:</p>
+<p>tagline it's class name in <em>hero.module.css</em>.</p>
 <pre><code>.main .tagline {
    display: flex;
    flex-direction: column;
    ...
 }
 </code></pre>
-<h4>Итог</h4>
-<p>Ничего сложного в этих двух вариантах нет. В CSS нужно просто сделать <em>@import</em>, а в React <em>import s from '...'</em></p>
-<p>Плюс в React финальная версия названия класса будет примерно такой: <em>hero_tagline__K9D64</em>, React делает так, чтобы этот класс всегда был уникальным и не перемешивал стили с другими классами</p>
+<h4>Conclusion</h4>
+<p>Nothing complicated in these two options. In CSS you just need to do <strong><em>@import</em></strong>, and in React <strong><em>import s from '...'</em></strong>.</p>
+<p><strong>Note:</strong> In React final version of class name will be something like this: <strong><em>hero_tagline__K9D64</em></strong>, React makes it so that this class is always unique and does not mix styles with other classes.</p>
 
-            <a href="/">На главную </a>
+            <a href="/">Go back</a>
          </article>
          <aside class="aside">
    <div class="asideContent">

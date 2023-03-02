@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
    <head>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,10 +14,7 @@
       <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
       <link rel="stylesheet" href="/index.css" />
       <title>
-         
-         Совет
-         
-         - Suimiro
+         Suimiro | true ? &lt; Ok /&gt; : &lt; Bad /&gt;
       </title>
    </head>
    
@@ -44,8 +41,8 @@
       <div class="navLinks">
          <ul class="navLinksContainer">
             <li class="links">
-               <a class="navLink" href="/posts">посты</a>
-               <a class="navLink" href="/hints">советы</a>
+               <a class="navLink" href="/posts">posts</a>
+               <a class="navLink" href="/hints">hints</a>
             </li>
             <li>
                <a class="navLink" href="/settings">
@@ -58,26 +55,30 @@
 </header>
 
          <article class="main article">
-            <a href="/">На главную </a>
+            <a href="/">Go back</a>
             <h3>true ? &lt; Ok /&gt; : &lt; Bad /&gt;</h3>
-<p>Давайте представим, что у нас есть функция, которая делает запрос на сервер. Очевидно, что данные подгрузятся не сразу, поэтому мы должны создать 2 компоненты: первая - список с данными, вторая - loader или placeholder.</p>
-<p>По сути, каждый раз, когда программа запускается, должно быть условие: подгрузились ли данные или нет?</p>
-<h4>Как можно, но не эффективно</h4>
+<p>Let's imagine that we have a function that makes a request to the server. Obviously, the data will not load immediately, so we need to create 2 components:</p>
+<ul>
+<li>the first is a list with data</li>
+<li>the second is a loader or placeholder.</li>
+</ul>
+<p>When app starts, we need to show a loader, and when the data is loaded, we need to show a list.</p>
+<h4>How can we do it, but not effectively</h4>
 <pre><code class="language-js">if (loading) {
    return &lt;Loader /&gt;;
 } else {
    return &lt;List /&gt;;
 }
 </code></pre>
-<p>Но не кажется ли вам, что этот код громоздкий? Я не люблю такие решения и предпочитаю делать всё намного короче:</p>
-<h4>Как нужно</h4>
+<p>A lot of code for such a simple task. But what if we can do it in one line?</p>
+<h4>Short and effective</h4>
 <pre><code class="language-js">loading ? &lt;Loader /&gt; : &lt;List /&gt;;
 </code></pre>
-<h4>Итог</h4>
-<p>Всегда старайтесь использовать тернарные операторы в ситуациях, похожих на эту. Возможен ещё вариант с (if else), где можно не ставить фигурные скобки, если тело будет в 1 строку.</p>
-<p>Но при каждом разе задумайтесь, а имеет ли смысл так делать? Не ухудшиться ли читаемость кода?</p>
+<h4>Conclusion</h4>
+<p>Always try to use ternary operators in situations like this. Another option is (if else), where you can not put curly braces if the body is in 1 line.</p>
+<p>But every time you do it, think about, does it make sense to do so? Will the code readability worsen?</p>
 
-            <a href="/">На главную </a>
+            <a href="/">Go back</a>
          </article>
          <aside class="aside">
    <div class="asideContent">

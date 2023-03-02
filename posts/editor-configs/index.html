@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
    <head>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,10 +14,7 @@
       <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
       <link rel="stylesheet" href="/index.css" />
       <title>
-         
-         Пост
-         
-         - Suimiro
+         Suimiro | Editorconfig and Prettier, what are they?
       </title>
    </head>
    
@@ -44,8 +41,8 @@
       <div class="navLinks">
          <ul class="navLinksContainer">
             <li class="links">
-               <a class="navLink" href="/posts">посты</a>
-               <a class="navLink" href="/hints">советы</a>
+               <a class="navLink" href="/posts">posts</a>
+               <a class="navLink" href="/hints">hints</a>
             </li>
             <li>
                <a class="navLink" href="/settings">
@@ -58,12 +55,12 @@
 </header>
 
          <article class="main article">
-            <a href="/">На главную </a>
-            <h3>Editorconfig и Prettier, зачем это?</h3>
-<p>Editorconfig и Prettier - это утилиты для форматирования текста</p>
+            <a href="/">Go back</a>
+            <h3>Editorconfig and Prettier, what are they?</h3>
+<p>Editorconfig and Prettier - it's utilities that help you to format text.</p>
 <h4>Editorconfig</h4>
-<p>В отличие от Prettier, editorconfig больше подходит для простого текста, а Prettier создавался именно для форматирования кода</p>
-<p>Файл .editorconfig может выглядеть примерно так:</p>
+<p>Unlike Prettier, editorconfig is more suitable for plain text, and Prettier was created specifically for code formatting.</p>
+<p>File .editorconfig can look like this:</p>
 <pre><code>root = true
 trim_trailing_whitespace = true
 
@@ -77,12 +74,12 @@ insert_final_newline = true
 indent_style = space
 indent_size = 2
 </code></pre>
-<p>Эта утилита позволяет стандартизировать стиль текста (размер таба, удаление лишних пробелов и тд.). Также можно указывать стандарты для отдельных типов файлов, указав в конфиге тип файла в квадратных скобках.</p>
-<p>Полную документацию можно будет узнать на сайте <a href="https://editorconfig.org/">editorconfig</a></p>
+<p>This tool allows you to standardize the style of text (tab size, removing empty spaces, etc.). You can also specify standards for individual file types by specifying the file type in square brackets in the config.</p>
+<p>Full documentation can be found on the <a href="https://editorconfig.org/">editorconfig</a></p>
 <h4>Prettier</h4>
-<p>Наверное лучший плагин для редактора в плане форматирования кода (HTML, CSS, JS, JSON, MD...)</p>
-<p>Если вы пользуетесь VsCode и установили Prettier, то в настройках редактора появится вкладка с настройками Prettier. Лично мне нравиться, когда в JS отсутствуют &quot;;&quot;, с помощью Prettier я могу настроить свой редактор так, что при сохранении файла у меня будет происходить форматирование файла по правилам, которые я указал, например: отключение &quot;;&quot; и одинарные кавычки</p>
-<p>Также само, как и у editorconfig, Prettier тоже можно настроить через конфиг .prettierrc:</p>
+<p>Maybe the best plugin for the editor in terms of code formatting (HTML, CSS, JS, JSON, MD...)</p>
+<p>If you use Visual Studio Code and have Prettier installed, then in the editor settings there will be a tab with Prettier settings. Personally, I like it when there are no &quot;;&quot; in JS, with Prettier I can configure my editor so that when I save the file, formatting of the file will occur according to the rules that I specified.</p>
+<p>The same as a editorconfig, Prettier can be configured through the config file .prettierrc:</p>
 <pre><code>{
    &quot;overrides&quot;: [
       {
@@ -96,11 +93,12 @@ indent_size = 2
    ]
 }
 </code></pre>
-<p>Я люблю эту возможность настройки через конфиг прямо в проекте. Знаете почему?</p>
-<h4>Итог</h4>
-<p>Когда проект разрабатывают больше чем один человек, хорошо бы было иметь такие конфиги, чтобы у всех членов команды были одни и те же стандарты форматирования. Используйте эти инструменты и ваш проект будет чист😉</p>
+<p>Here is a full list of <a href="https://prettier.io/">options</a></p>
+<h4>Сonclusion</h4>
+<p>I love this ability to configure through the config right in the project.</p>
+<p>When projects are developed by more than one person, it would be nice to have such configs so that all members of the team have the same formatting standards. Use these tools and your project will be clean.😉</p>
 
-            <a href="/">На главную </a>
+            <a href="/">Go back</a>
          </article>
          <aside class="aside">
    <div class="asideContent">
