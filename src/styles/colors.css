@@ -1,29 +1,32 @@
 .yellow {
    @apply bg-[#FBCE1C] text-dark;
 }
-.emerald {
-   @apply bg-[#10B981] text-white;
-}
 .blue {
-   @apply bg-[#1d4ed8] text-white;
+   @apply bg-[#2563EB] text-white;
 }
 .red {
-   @apply bg-[#e12222] text-white;
+   @apply bg-[#EF4444] text-white;
+}
+.green {
+   @apply bg-[#059669] text-white;
+}
+.brilliant {
+   @apply bg-[#F59E0B] text-white;
 }
 .orange {
-   @apply bg-[#F97316] text-dark;
+   @apply bg-[#F97316] text-white;
+}
+.purple {
+   @apply bg-[#8B5CF6] text-white;
+}
+.pink {
+   @apply bg-[#EC4899] text-white;
 }
 .stone {
    @apply bg-[#292524] text-white;
 }
 .lime {
    @apply bg-[#84CC16] text-dark;
-}
-.indigo {
-   @apply bg-[#4338CA] text-white;
-}
-.lightviolet {
-   @apply bg-[#A78BFA] text-dark;
 }
 .transparent {
    @apply bg-transparent text-dark border-[3px] border-dark;

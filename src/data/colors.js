@@ -1,12 +1,11 @@
 module.exports = [
-   'red',
-   'yellow',
    'orange',
-   'emerald',
+   'brilliant',
+   'yellow',
    'lime',
    'blue',
-   'indigo',
-   'lightviolet',
+   'purple',
+   'pink',
    'stone',
    'transparent',
 ]
