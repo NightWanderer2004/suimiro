@@ -3,6 +3,11 @@ const express = require('express')
 const path = require('path')
 const process = require('process')
 const app = express()
+const ghpages = require('gh-pages')
+const fs = require('fs')
+
+fs.writeFile('dist/CNAME', 'suimiro.me')
+ghpages.publish('dist')
 
 const port = process.env.PORT || 1234
 
