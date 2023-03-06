@@ -20,6 +20,9 @@
    @apply p-2 mt-6 overflow-scroll bg-gray-100 text-lg;
    tab-size: 2;
 }
+.article em {
+   @apply bg-gray-100;
+}
 .article ul,
 .article ol {
    @apply list-decimal mt-6 pl-10;
