@@ -11,5 +11,5 @@ module.exports = {
          montserrat: 'Montserrat',
       },
    },
-   plugins: [],
+   plugins: [require('@tailwindcss/line-clamp')],
 }
