@@ -839,6 +839,10 @@ body.dark .main.article pre{
    background-color: rgb(63 63 70 / 0.6);
 }
 
+body.dark .main.article em{
+   background-color: rgb(63 63 70 / 0.6);
+}
+
 body.dark .main.article img{
    --tw-shadow: 3px 3px rgba(229,229,229);
    --tw-shadow-colored: 3px 3px var(--tw-shadow-color);
@@ -1108,11 +1112,14 @@ body.dark .tgCenter{
    display: flex;
    height: 100%;
    width: 100%;
-   flex-direction: column;
    font-size: 3rem;
    line-height: 1;
    font-weight: 600;
    text-underline-offset: 2px;
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2;
 }
 
 .postLink:hover, .hintLink:hover{
@@ -1211,6 +1218,11 @@ body.dark .tgCenter{
    -moz-tab-size: 2;
      -o-tab-size: 2;
         tab-size: 2;
+}
+
+.article em{
+   --tw-bg-opacity: 1;
+   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .article ul, .article ol{
@@ -2151,6 +2163,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .underline{
    -webkit-text-decoration-line: underline;
            text-decoration-line: underline;
+}
+
+.underline-offset-2{
+   text-underline-offset: 2px;
 }
 
 .accent-dark{

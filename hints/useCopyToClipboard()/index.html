@@ -3,7 +3,6 @@
    <head>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="description" content="Suimiro is a blogging platform where you have the freedom to express yourself and share your knowledge with the world.">
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link
          rel="shortcut icon"
@@ -14,9 +13,11 @@
       <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32">
       <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
       <link rel="stylesheet" href="/index.css" />
-      <title>Suimiro | Posts</title>
+      <title>
+         Suimiro | Copy to clipboard
+      </title>
    </head>
-
+   
    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SM6PDJMTL5"></script>
    <script>
    window.dataLayer = window.dataLayer || [];
@@ -53,41 +54,65 @@
    </nav>
 </header>
 
-         <main class="main">
-            
+         <article class="main article">
+            <a href="/">Go back</a>
+            <h3>Copy to clipboard</h3>
+<p>Today we talk about creating own hook called <strong><em>UseCopyToClipboard</em></strong> in ReactJS. It's a hook that allows you to copy text to clipboard. So let's start:</p>
+<h4>For what?</h4>
+<p>I found this very useful when you have a code section and you want to copy it to clipboard. It's usually a small button in right corner of code section.</p>
+<h4>Coding</h4>
+<pre><code class="language-jsx">import { useState } from &quot;react&quot;;
 
+const useCopyToClipboard = () =&gt; {
+   const [copiedText, setCopiedText] = useState(null);
 
-<h1 class="title">Posts</h1>
+   const copy = async (text) =&gt; {
+      if (!navigator || !navigator.clipboard) {
+         console.warn(&quot;Clipboard not supported&quot;);
+         return false;
+      }
 
-<ul class="postsList">
-   
-   <li>
-      <a class="postLink" href="/posts/hb-day/">
-         <h3>Author start in web</h3>
-      </a>
-   </li>
-   
-   <li>
-      <a class="postLink" href="/posts/lite-linux/">
-         <h3>What is Tiny Core Linux?</h3>
-      </a>
-   </li>
-   
-   <li>
-      <a class="postLink" href="/posts/editor-configs/">
-         <h3>Editorconfig and Prettier, what are they?</h3>
-      </a>
-   </li>
-   
-   <li>
-      <a class="postLink" href="/posts/github-for-students/">
-         <h3>GitHub for students</h3>
-      </a>
-   </li>
-   
-</ul>
+      try {
+         await navigator.clipboard.writeText(text);
+         setCopiedText(text);
+         return true;
+      } catch (error) {
+         console.warn(&quot;Copy failed&quot;, error);
+         setCopiedText(null);
+         return false;
+      }
+   };
 
-         </main>
+   return [copiedText, copy];
+};
+
+export default useCopyToClipboard;
+</code></pre>
+<p><strong>Note:</strong> This hook is not supported in IE11 and below. Because of <em><strong>navigator.clipboard</strong></em> missing. If you want to support IE11, you can use <a href="https://clipboardjs.com/">clipboard.js</a>.</p>
+<h4>Usage</h4>
+<pre><code class="language-jsx">import { useCopyToClipboard } from &quot;.../.../...&quot;;
+
+export default function Component() {
+   const [value, copy] = useCopyToClipboard();
+
+   return (
+      &lt;&gt;
+         &lt;div&gt;
+            &lt;button onClick={() =&gt; copy(&quot;Hello&quot;)}&gt;Hello&lt;/button&gt;
+            &lt;button onClick={() =&gt; copy(&quot;React&quot;)}&gt;React&lt;/button&gt;
+            &lt;button onClick={() =&gt; copy(&quot;JavaScript&quot;)}&gt;JavaScript&lt;/button&gt;
+         &lt;/div&gt;
+         &lt;p&gt;Copied value: {value ? &quot;Nothing is copied yet!&quot; : &quot;&quot;}&lt;/p&gt;
+      &lt;/&gt;
+   );
+}
+</code></pre>
+<p>Here we use <em><strong>copy</strong></em> function to copy text to clipboard. And <em><strong>value</strong></em> is the text that is copied.</p>
+<h4>Conclusion</h4>
+<p>Using the <em><strong>useCopyToClipboard</strong></em> hook improving the user experience to make &quot;fast-copy&quot;. I hope you will find it useful too. Give it a try in your own projects and see how it works for you!</p>
+
+            <a href="/">Go back</a>
+         </article>
          <aside class="aside">
    <div class="asideContent">
       <ul class="asideLinks">
