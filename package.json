@@ -7,14 +7,12 @@
     "serve": "eleventy --serve",
     "css": "postcss ./src/styles/index.css -o ./dist/index.css -w",
     "build": "rm -rf dist && eleventy && postcss ./src/styles/index.css -o ./dist/index.css",
-    "spell": "yaspeller --only-errors -l 'ru' *.md",
+    "spell": "yaspeller --only-errors -l 'en' *.md",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
   "yaspeller": {
-    "dictionary": [
-      "конфиг(ах|)"
-    ]
+    "dictionary": []
   },
   "author": "NightWandeder2004",
   "license": "ISC",
