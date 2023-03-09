@@ -2,7 +2,7 @@
    @apply flex items-center h-16 border-b-2 sm:border-b-4 border-dark sm:h-20 bg-transparent;
 }
 .navbarContent {
-   @apply container sm:max-w-none flex items-center justify-between sm:justify-start w-full px-1 mx-auto gap-x-6 sm:gap-x-8;
+   @apply container sm:max-w-none flex items-center justify-between sm:justify-start w-full sm:pr-4 mx-auto gap-x-6 sm:gap-x-8;
 }
 .navLinks {
    @apply absolute sm:static right-0 -top-full w-full flex-1 border-b-2 border-dark sm:border-transparent bg-white sm:bg-transparent;

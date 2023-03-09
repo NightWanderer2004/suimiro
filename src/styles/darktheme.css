@@ -38,16 +38,18 @@ body.dark .colorsButton.active.stone::before {
    content: "";
    @apply bg-dark;
 }
-body.dark .yellow,
-body.dark .emerald,
-body.dark .blue,
-body.dark .red,
+
 body.dark .orange,
-body.dark .stone,
+body.dark .brilliant,
+body.dark .yellow,
 body.dark .lime,
-body.dark .indigo,
-body.dark .lightviolet {
-   @apply bg-opacity-90;
+body.dark .blue,
+body.dark .purple,
+body.dark .pink,
+body.dark .stone,
+body.dark .metal,
+body.dark .transparent {
+   @apply bg-opacity-90 text-light;
 }
 
 /* Feed */

@@ -1,8 +1,8 @@
 .aside {
-   @apply flex items-center text-white border-t-2 md:border-t-4 border-dark;
+   @apply flex items-center text-white border-t-2 sm:border-t-4 border-dark;
 }
 .asideContent {
-   @apply container md:max-w-none pr-2 pl-0 py-2 mx-auto font-semibold text-dark;
+   @apply container sm:max-w-none pr-4 pl-0 py-2 mx-auto font-semibold text-dark;
 }
 .asideLinks {
    @apply flex gap-x-3;
@@ -18,7 +18,7 @@
    @apply bg-dark;
 }
 .footerContent {
-   @apply container sm:max-w-none pr-2 pl-0 py-4 mx-auto;
+   @apply container sm:max-w-none pr-4 pl-0 py-4 mx-auto;
 }
 .footerInfo {
    @apply flex justify-between items-start text-7xl font-semibold text-white;
