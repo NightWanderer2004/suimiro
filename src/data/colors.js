@@ -7,5 +7,6 @@ module.exports = [
    'purple',
    'pink',
    'stone',
+   'metal',
    'transparent',
 ]
