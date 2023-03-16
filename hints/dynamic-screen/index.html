@@ -3,7 +3,6 @@
    <head>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="description" content="Suimiro is a blogging platform where you have the freedom to express yourself and share your knowledge with the world.">
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link
          rel="shortcut icon"
@@ -14,7 +13,9 @@
       <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32">
       <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
       <link rel="stylesheet" href="/index.css" />
-      <title>Suimiro | Posts</title>
+      <title>
+         Suimiro | Dynamic screen
+      </title>
    </head>
    <body>
       <div class="wrapper">
@@ -43,41 +44,32 @@
    </nav>
 </header>
 
-         <main class="main">
-            
+         <article class="main article">
+            <a href="/">Go back</a>
+            <h3>Dynamic screen</h3>
+<p>Are you remember a <em><strong>vh</strong></em> unit in CSS?</p>
+<p>I remember, and for today I thinked that this unit is uniqe. But... I found that there is a <em><strong>svh</strong></em> and <em><strong>lvh</strong></em> units too. Oh, and the <em><strong>dvh</strong></em> unit too.</p>
+<h4>What is the vh unit?</h4>
+<p>It's a full heigh of your device screen.</p>
+<p>For example, if you have a 1080p screen, the <strong><em>100vh</em></strong> unit will be 1080px.</p>
+<h4>Svh and Lvh</h4>
+<p>That's useful for mobile browsers. Because the browser UI is overlaping page if use <em><strong>vh</strong></em> unit.</p>
+<img src="img/vh.png" alt="" />
+<p>As you can see, yellow border is under the UI.</p>
+<p>The <em><strong>svh</strong></em>(small viewport) unit fills a full screen, but hold free space for the address bar.</p>
+<img src="img/svh.png" alt="" />
+<p>The <em><strong>lvh</strong></em>(large viewport) unit it's the same, but without the address bar.</p>
+<img src="img/lvh.png" alt="" />
+<h4>Dvh (greatest)</h4>
+<p>The <em><strong>dvh</strong></em>(dynamic viewport) unit it's automatically conforms. If short, your screen will always be filled with 100% regardless of browser UI.</p>
+<img src="img/dvh-sm.png" alt="" />
+<img src="img/dvh-lg.png" alt="" />
+<p>You see, that border is always on the top of the screen.</p>
+<h4>Conclusion</h4>
+<p>It's interesting, I found a new super responsive <em><strong>dvh</strong></em> unit. For mobile-first developing, it's a good thing to use insted of the <em><strong>vh</strong></em> unit.</p>
 
-
-<h1 class="title">Posts</h1>
-
-<ul class="postsList">
-   
-   <li>
-      <a class="postLink" href="/posts/hb-day/">
-         <h3>Author start in web</h3>
-      </a>
-   </li>
-   
-   <li>
-      <a class="postLink" href="/posts/lite-linux/">
-         <h3>What is Tiny Core Linux?</h3>
-      </a>
-   </li>
-   
-   <li>
-      <a class="postLink" href="/posts/editor-configs/">
-         <h3>Editorconfig and Prettier, what are they?</h3>
-      </a>
-   </li>
-   
-   <li>
-      <a class="postLink" href="/posts/github-for-students/">
-         <h3>GitHub for students</h3>
-      </a>
-   </li>
-   
-</ul>
-
-         </main>
+            <a href="/">Go back</a>
+         </article>
          <aside class="aside">
    <div class="asideContent">
       <ul class="asideLinks">
