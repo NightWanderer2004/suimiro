@@ -49,7 +49,16 @@ body.dark .pink,
 body.dark .stone,
 body.dark .metal,
 body.dark .transparent {
-   @apply bg-opacity-90 text-light;
+   @apply bg-opacity-90;
+}
+body.dark .orange,
+body.dark .brilliant,
+body.dark .blue,
+body.dark .purple,
+body.dark .pink,
+body.dark .metal,
+body.dark .transparent {
+   @apply border-opacity-90 text-light;
 }
 
 /* Feed */
@@ -58,8 +67,7 @@ body.dark .allLink {
 }
 
 /* Post/Hint */
-body.dark .main.article a:first-child,
-body.dark .main.article a:last-child {
+body.dark .main.article a {
    @apply text-blue-600/90;
 }
 body.dark .main.article pre {
