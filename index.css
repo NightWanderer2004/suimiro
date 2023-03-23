@@ -1226,7 +1226,7 @@ body.dark .tgCenter{
 @media (min-width: 1024px){
 
    .article img{
-      width: 480px;
+      width: 580px;
    }
 }
 
@@ -2380,8 +2380,8 @@ body{
 
 @media (min-width: 1024px){
 
-   .lg\:w-\[480px\]{
-      width: 480px;
+   .lg\:w-\[580px\]{
+      width: 580px;
    }
 
    .lg\:grid-cols-5{
