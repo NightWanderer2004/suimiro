@@ -1,5 +1,8 @@
 .article a {
-   @apply text-4xl font-semibold text-blue-800/90 hover:underline underline-offset-2;
+   @apply text-3xl font-semibold text-blue-800/90 hover:underline underline-offset-2;
+}
+.article a[href="/"] {
+   @apply text-4xl;
 }
 .article h3 {
    @apply my-4 text-6xl md:text-8xl font-bold break-words;
