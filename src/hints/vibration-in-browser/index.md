@@ -26,4 +26,4 @@ Here is a [link](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/vibr
 
 #### Conclusion
 
-For now it's in early stages of development, but I thinks, that it's a really good way to improve UX and get some fun 😁.
+For now, it's in the very early stages of development and doesn't support every browser. For example, Safari is not capable of running it 😒. I hope that in future updates, they will add support for it. However, I think that it's a really good way to improve UX and have some fun 😁. Let's wait and see.
