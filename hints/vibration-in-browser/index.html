@@ -3,7 +3,6 @@
    <head>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="description" content="Suimiro is a blogging platform where you have the freedom to express yourself and share your knowledge with the world.">
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link
          rel="shortcut icon"
@@ -14,7 +13,9 @@
       <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32">
       <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
       <link rel="stylesheet" href="/index.css" />
-      <title>Suimiro | Hints</title>
+      <title>
+         Suimiro | Vibration in browser
+      </title>
    </head>
    <body>
       <div class="wrapper">
@@ -43,53 +44,23 @@
    </nav>
 </header>
 
-         <main class="main">
-            
+         <article class="main article">
+            <a href="/">Go back</a>
+            <h3>Vibration in browser</h3>
+<h4>Why is it cool?</h4>
+<p>Your mobile OS has a vibrations and it makes a better UX. But why mobile browsers doen't have it??</p>
+<p><strong>*Prehistory</strong> With the increasing use of mobile devices, web developers are constantly seeking ways to enhance the UX. Most demanded is vibration in mobile browsers.</p>
+<p>Let's discuss how it works and how it can be used in mobile web development.</p>
+<h4>Cases for using</h4>
+<p>The most popular use cases for vibration are providing <em><strong>feedback for button presses</strong></em> and <em><strong>alerting new notifications</strong></em>.</p>
+<h4>How to implement?</h4>
+<p>To trigger a vibration, simply call the <em><strong>navigator.vibrate([500, 250, 500])</strong></em> function with an array of numbers representing the duration of each vibration and pause. This example vibrate for 0.5s, pause for a 0.25s, and then vibrate for another 0.5s...</p>
+<p>Here is a <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/vibrate">link</a> to docs.</p>
+<h4>Conclusion</h4>
+<p>For now, it's in the very early stages of development and doesn't support every browser. For example, Safari is not capable of running it 😒. I hope that in future updates, they will add support for it. However, I think that it's a really good way to improve UX and have some fun 😁. Let's wait and see.</p>
 
-
-<h1 class="title">Hints</h1>
-
-<ul class="hintsList">
-   
-   <li>
-      <a class="hintLink" href="/hints/vibration-in-browser/">
-         <h3>Vibration in browser</h3>
-      </a>
-   </li>
-   
-   <li>
-      <a class="hintLink" href="/hints/dynamic-screen/">
-         <h3>Dynamic screen</h3>
-      </a>
-   </li>
-   
-   <li>
-      <a class="hintLink" href="/hints/useCopyToClipboard()/">
-         <h3>Copy to clipboard</h3>
-      </a>
-   </li>
-   
-   <li>
-      <a class="hintLink" href="/hints/css-modules/">
-         <h3>CSS modules</h3>
-      </a>
-   </li>
-   
-   <li>
-      <a class="hintLink" href="/hints/class-condition/">
-         <h3>Classes by condition</h3>
-      </a>
-   </li>
-   
-   <li>
-      <a class="hintLink" href="/hints/condition-render/">
-         <h3>true ? &lt; Ok /&gt; : &lt; Bad /&gt;</h3>
-      </a>
-   </li>
-   
-</ul>
-
-         </main>
+            <a href="/">Go back</a>
+         </article>
          <aside class="aside">
    <div class="asideContent">
       <ul class="asideLinks">
