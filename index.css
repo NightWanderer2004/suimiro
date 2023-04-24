@@ -1124,8 +1124,18 @@ body.dark .tgCenter{
    display: flex;
    height: 100%;
    width: 100%;
-   font-size: 3rem;
-   line-height: 1;
+   flex-direction: column;
+}
+
+.postLink .postInfo, .hintLink .hintInfo{
+   display: flex;
+   justify-content: space-between;
+}
+
+.postLink .postTitle, .hintLink .hintTitle{
+   margin-top: 0.75rem;
+   font-size: 2.25rem;
+   line-height: 2.5rem;
    font-weight: 600;
    text-underline-offset: 2px;
    overflow: hidden;
@@ -1134,16 +1144,31 @@ body.dark .tgCenter{
    -webkit-line-clamp: 2;
 }
 
-.postLink:hover, .hintLink:hover{
+.postLink .postTitle:hover, .hintLink .hintTitle:hover{
    -webkit-text-decoration-line: underline;
            text-decoration-line: underline;
 }
 
 @media (min-width: 640px){
 
-   .postLink, .hintLink{
-      font-size: 3.75rem;
+   .postLink .postTitle, .hintLink .hintTitle{
+      font-size: 3rem;
       line-height: 1;
+   }
+}
+
+.postLink .postAuthor, .hintLink .hintAuthor, .postLink .postDate, .hintLink .hintDate{
+   margin: 0px;
+   font-size: 0.875rem;
+   line-height: 1.25rem;
+   font-weight: 600;
+}
+
+@media (min-width: 640px){
+
+   .postLink .postAuthor, .hintLink .hintAuthor, .postLink .postDate, .hintLink .hintDate{
+      font-size: 1rem;
+      line-height: 1.5rem;
    }
 }
 
@@ -1267,6 +1292,25 @@ body.dark .tgCenter{
    margin-top: 0.75rem;
    font-size: 1.25rem;
    line-height: 1.75rem;
+}
+
+.article .author{
+   margin-top: 5rem;
+   font-size: 1.125rem;
+   line-height: 1.75rem;
+   font-weight: 700;
+}
+
+.article .author + .date{
+   margin-top: 0px;
+}
+
+.article .date{
+   margin: 0px;
+   margin-top: 5rem;
+   font-size: 1rem;
+   line-height: 1.5rem;
+   font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {
@@ -1780,6 +1824,10 @@ Ensure the default browser behavior of the `hidden` attribute.
    z-index: 10;
 }
 
+.m-0{
+   margin: 0px;
+}
+
 .my-4{
    margin-top: 1rem;
    margin-bottom: 1rem;
@@ -1824,10 +1872,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid{
    display: grid;
-}
-
-.h-full{
-   height: 100%;
 }
 
 .h-16{
@@ -2137,9 +2181,9 @@ Ensure the default browser behavior of the `hidden` attribute.
    line-height: 1.75rem;
 }
 
-.text-sm{
-   font-size: 0.875rem;
-   line-height: 1.25rem;
+.text-lg{
+   font-size: 1.125rem;
+   line-height: 1.75rem;
 }
 
 .text-base{
@@ -2150,6 +2194,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-4xl{
    font-size: 2.25rem;
    line-height: 2.5rem;
+}
+
+.text-sm{
+   font-size: 0.875rem;
+   line-height: 1.25rem;
 }
 
 .text-7xl{
@@ -2315,18 +2364,18 @@ body{
       text-align: left;
    }
 
-   .sm\:text-6xl{
-      font-size: 3.75rem;
+   .sm\:text-5xl{
+      font-size: 3rem;
       line-height: 1;
+   }
+
+   .sm\:text-base{
+      font-size: 1rem;
+      line-height: 1.5rem;
    }
 
    .sm\:text-7xl{
       font-size: 4.5rem;
-      line-height: 1;
-   }
-
-   .sm\:text-5xl{
-      font-size: 3rem;
       line-height: 1;
    }
 
