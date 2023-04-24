@@ -5,7 +5,7 @@ module.exports = [
    'lime',
    'blue',
    'purple',
-   'pink',
+   'blood',
    'stone',
    'metal',
    'transparent',

@@ -4,8 +4,8 @@
 .blue {
    @apply bg-[#2563EB] text-white;
 }
-.red {
-   @apply bg-[#EF4444] text-white;
+.blood {
+   @apply bg-[#DC2626] text-white;
 }
 .green {
    @apply bg-[#059669] text-white;

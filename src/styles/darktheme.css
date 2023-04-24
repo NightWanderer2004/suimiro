@@ -45,7 +45,7 @@ body.dark .yellow,
 body.dark .lime,
 body.dark .blue,
 body.dark .purple,
-body.dark .pink,
+body.dark .blood,
 body.dark .stone,
 body.dark .metal,
 body.dark .transparent {
@@ -55,7 +55,7 @@ body.dark .orange,
 body.dark .brilliant,
 body.dark .blue,
 body.dark .purple,
-body.dark .pink,
+body.dark .blood,
 body.dark .metal,
 body.dark .transparent {
    @apply border-opacity-90 text-light;
