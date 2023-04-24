@@ -26,6 +26,18 @@
          <article class="main article">
             <a href="/">Go back</a>
             {{ content | safe }}
+            {% if author %}
+            <p class="author">by: {{ author }}</p>
+            {% endif %}
+            <p class="date">
+               {{
+                  date.toLocaleDateString("en", {
+                     year: "numeric",
+                     month: "long",
+                     day: "numeric"
+                  })
+               }}
+            </p>
             <a href="/">Go back</a>
          </article>
          {% include 'footer.njk' %}

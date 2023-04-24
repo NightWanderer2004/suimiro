@@ -13,7 +13,19 @@ permalink: "posts/"
    {% for post in posts %}
    <li>
       <a class="postLink" href="{{ post.url }}">
-         <h3>{{ post.data.title }}</h3>
+         <div class="postInfo">
+            <p class="postAuthor">{{ post.data.author }}</p>
+            <p class="postDate">
+               {{
+                     post.data.date.toLocaleDateString("en", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric"
+                     })
+                  }}
+            </p>
+         </div>
+         <h3 class="postTitle">{{ post.data.title }}</h3>
       </a>
    </li>
    {% endfor %}

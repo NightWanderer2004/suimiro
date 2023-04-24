@@ -13,7 +13,18 @@ permalink: "hints/"
    {% for hint in hints %}
    <li>
       <a class="hintLink" href="{{ hint.url }}">
-         <h3>{{ hint.data.title }}</h3>
+         <div class="hintInfo">
+            <p class="hintDate">
+               {{
+                  hint.data.date.toLocaleDateString("en", {
+                     year: "numeric",
+                     month: "long",
+                     day: "numeric"
+                  })
+               }}
+            </p>
+         </div>
+         <h3 class="hintTitle">{{ hint.data.title }}</h3>
       </a>
    </li>
    {% endfor %}

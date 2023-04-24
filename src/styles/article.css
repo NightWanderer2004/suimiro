@@ -34,6 +34,15 @@
 .article ol li {
    @apply text-xl mt-3;
 }
+.article .author {
+   @apply text-lg font-bold mt-20;
+}
+.article .author + .date {
+   @apply mt-0;
+}
+.article .date {
+   @apply text-base m-0 font-semibold mt-20;
+}
 
 @media screen and (min-width: 768px) {
    .article pre {
