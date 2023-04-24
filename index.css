@@ -14,9 +14,9 @@
    color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.red{
+.blood{
    --tw-bg-opacity: 1;
-   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
    --tw-text-opacity: 1;
    color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -825,11 +825,11 @@ body.dark .colorsButton.active.stone::before {
    background-color: rgb(18 18 18 / var(--tw-bg-opacity));
 }
 
-body.dark .orange, body.dark .brilliant, body.dark .yellow, body.dark .lime, body.dark .blue, body.dark .purple, body.dark .pink, body.dark .stone, body.dark .metal, body.dark .transparent{
+body.dark .orange, body.dark .brilliant, body.dark .yellow, body.dark .lime, body.dark .blue, body.dark .purple, body.dark .blood, body.dark .stone, body.dark .metal, body.dark .transparent{
    --tw-bg-opacity: 0.9;
 }
 
-body.dark .orange, body.dark .brilliant, body.dark .blue, body.dark .purple, body.dark .pink, body.dark .metal, body.dark .transparent{
+body.dark .orange, body.dark .brilliant, body.dark .blue, body.dark .purple, body.dark .blood, body.dark .metal, body.dark .transparent{
    --tw-border-opacity: 0.9;
    --tw-text-opacity: 1;
    color: rgb(229 229 229 / var(--tw-text-opacity));
@@ -2041,9 +2041,9 @@ Ensure the default browser behavior of the `hidden` attribute.
    background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#EF4444\]{
+.bg-\[\#DC2626\]{
    --tw-bg-opacity: 1;
-   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#059669\]{
