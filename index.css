@@ -1298,23 +1298,13 @@ body.dark .tgCenter{
 
 .article img{
    margin-top: 1.5rem;
-   width: 360px;
-   --tw-shadow: 3px 3px rgba(0,0,0);
-   --tw-shadow-colored: 3px 3px var(--tw-shadow-color);
-   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+   width: auto;
 }
 
 @media (min-width: 768px){
 
    .article img{
-      width: 430px;
-   }
-}
-
-@media (min-width: 1024px){
-
-   .article img{
-      width: 580px;
+      width: 60vw;
    }
 }
 
@@ -2006,8 +1996,8 @@ Ensure the default browser behavior of the `hidden` attribute.
    min-height: 100vh;
 }
 
-.w-\[360px\]{
-   width: 360px;
+.w-auto{
+   width: auto;
 }
 
 .w-full{
@@ -2511,10 +2501,6 @@ body{
       display: block;
    }
 
-   .md\:w-\[430px\]{
-      width: 430px;
-   }
-
    .md\:grid-cols-2{
       grid-template-columns: repeat(2, minmax(0, 1fr));
    }
@@ -2544,10 +2530,6 @@ body{
 }
 
 @media (min-width: 1024px){
-
-   .lg\:w-\[580px\]{
-      width: 580px;
-   }
 
    .lg\:grid-cols-5{
       grid-template-columns: repeat(5, minmax(0, 1fr));

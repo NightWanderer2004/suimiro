@@ -22,6 +22,7 @@ For example, it allows you to create workspaces to group tabs by categories or u
 
 Here I'll show you some things I enjoy:
 
+-  No more tabs, only _**'workspaces'**_.
 -  New design system with a fresh and minimalistic view, good introduction, and hints.
 -  Awesome hotkeys with _**'one-key'**_ commands that help browse pages faster.
 -  Split screen with an _**'iOS-like'**_ view and some extensions.
@@ -35,22 +36,22 @@ I cannot say much about this browser, because I can't install it _**(requires Ma
 
 #### My SigmaOS
 
-![SigmaOS window](./sigmaos.jpg)
+![SigmaOS window](./img/sigmaos.png)
 Here I create workspaces for different tasks, like development, studies, and personal.
 
 I also like to use the _**'focus mode'**_ to stay only in the app.
-![SigmaOS focus mode](./sigmaos-focus.jpg)
+![SigmaOS focus mode](./img/sigmaos-focus.png)
 
 Split screen mode looks like this:
-![SigmaOS split screen](./sigmaos-split.jpg)
+![SigmaOS split screen](./img/sigmaos-split.png)
 
 Use mini-window for _**GPT**_ when needed:
-![SigmaOS mini-window](./sigmaos-mini.jpg)
+![SigmaOS mini-window](./img/sigmaos-mini.png)
 
 #### Dev tools
 
 In SigmaOS dev tools is the similar as Safari's, because it uses a webkit engine. Nothing special.
-![SigmaOS dev tools](./sigmaos-dev.jpg)
+![SigmaOS dev tools](./img/sigmaos-dev.png)
 
 #### Hotkeys
 
