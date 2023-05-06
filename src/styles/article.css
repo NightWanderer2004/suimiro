@@ -17,7 +17,7 @@
    @apply mb-6;
 }
 .article img {
-   @apply mt-6 w-[360px] md:w-[430px] lg:w-[580px] shadow-[3px_3px_rgba(0,0,0)];
+   @apply mt-6 w-auto md:w-[60vw];
 }
 .article pre {
    @apply p-2 mt-6 overflow-scroll bg-gray-100 text-lg;
