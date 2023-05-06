@@ -15,6 +15,7 @@
       <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
       <link rel="manifest" href="/assets/site.webmanifest">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
       <link rel="stylesheet" href="/index.css" />
       <title>
          Suimiro | Editorconfig and Prettier, what are they?
@@ -54,7 +55,7 @@
 <h4>Editorconfig</h4>
 <p>Unlike Prettier, editorconfig is more suitable for plain text, and Prettier was created specifically for code formatting.</p>
 <p>File .editorconfig can look like this:</p>
-<pre><code>root = true
+<pre><code class="language-js">root = true
 trim_trailing_whitespace = true
 
 [*]
@@ -73,7 +74,7 @@ indent_size = 2
 <p>Maybe the best plugin for the editor in terms of code formatting (HTML, CSS, JS, JSON, MD...)</p>
 <p>If you use Visual Studio Code and have Prettier installed, then in the editor settings there will be a tab with Prettier settings. Personally, I like it when there are no &quot;;&quot; in JS, with Prettier I can configure my editor so that when I save the file, formatting of the file will occur according to the rules that I specified.</p>
 <p>The same as a editorconfig, Prettier can be configured through the config file .prettierrc:</p>
-<pre><code>{
+<pre><code class="language-js">{
    &quot;overrides&quot;: [
       {
          &quot;files&quot;: &quot;*.js&quot;,

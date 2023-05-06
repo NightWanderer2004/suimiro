@@ -12,7 +12,7 @@ Let's see how can we split styles into modules. I will show you how I do it in R
 
 Needs to be a folder called **_styles_**, in which all CSS files will be. There is **_index.css_**, inside it can look like this:
 
-```
+```css
 @import "./colors.css";
 @import "./settings.css";
 @import "./navbar.css";
@@ -31,39 +31,37 @@ Here we import all _.css_ files. So, you just need to create a **_.css_** file i
 
 In React you can use **_.module.css_** files and import them already in components:
 
-```
-import React from 'react'
-import s from '../../styles/homePage/hero.module.css'
+```js
+import React from "react";
+import s from "../../styles/homePage/hero.module.css";
 
 const Hero = () => {
    return (
       <div className={s.main}>
          <div className={s.tagline}>
-            <h1>
-               Hello :)
-            </h1>
+            <h1>Hello :)</h1>
             <p>Suimiro blog</p>
          </div>
       </div>
-   )
-}
+   );
+};
 
-export default Hero
+export default Hero;
 ```
 
 It's basic React component. **_'s'_** in **_import s from '...'_** is just a variable (can be any name), which you will then need to specify in the _className_ element.
 
-```
+```js
 className={s.tagline}
 ```
 
 tagline it's class name in _hero.module.css_.
 
-```
+```css
 .main .tagline {
    display: flex;
    flex-direction: column;
-   ...
+   ...;
 }
 ```
 

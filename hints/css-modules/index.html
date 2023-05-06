@@ -11,6 +11,7 @@
       <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
       <link rel="manifest" href="/assets/site.webmanifest">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
       <link rel="stylesheet" href="/index.css" />
       <title>
          Suimiro | CSS modules
@@ -49,7 +50,7 @@
 <p>Let's see how can we split styles into modules. I will show you how I do it in React and vanilla CSS.</p>
 <h4>Vanilla CSS</h4>
 <p>Needs to be a folder called <strong><em>styles</em></strong>, in which all CSS files will be. There is <strong><em>index.css</em></strong>, inside it can look like this:</p>
-<pre><code>@import &quot;./colors.css&quot;;
+<pre><code class="language-css">@import &quot;./colors.css&quot;;
 @import &quot;./settings.css&quot;;
 @import &quot;./navbar.css&quot;;
 @import &quot;./page.css&quot;;
@@ -63,32 +64,30 @@
 <p>Here we import all <em>.css</em> files. So, you just need to create a <strong><em>.css</em></strong> file in which you write styles as usual, and then just import it in <strong><em>index.css</em></strong>, THAT'S IT.</p>
 <h4>React</h4>
 <p>In React you can use <strong><em>.module.css</em></strong> files and import them already in components:</p>
-<pre><code>import React from 'react'
-import s from '../../styles/homePage/hero.module.css'
+<pre><code class="language-js">import React from &quot;react&quot;;
+import s from &quot;../../styles/homePage/hero.module.css&quot;;
 
 const Hero = () =&gt; {
    return (
       &lt;div className={s.main}&gt;
          &lt;div className={s.tagline}&gt;
-            &lt;h1&gt;
-               Hello :)
-            &lt;/h1&gt;
+            &lt;h1&gt;Hello :)&lt;/h1&gt;
             &lt;p&gt;Suimiro blog&lt;/p&gt;
          &lt;/div&gt;
       &lt;/div&gt;
-   )
-}
+   );
+};
 
-export default Hero
+export default Hero;
 </code></pre>
 <p>It's basic React component. <strong><em>'s'</em></strong> in <strong><em>import s from '...'</em></strong> is just a variable (can be any name), which you will then need to specify in the <em>className</em> element.</p>
-<pre><code>className={s.tagline}
+<pre><code class="language-js">className={s.tagline}
 </code></pre>
 <p>tagline it's class name in <em>hero.module.css</em>.</p>
-<pre><code>.main .tagline {
+<pre><code class="language-css">.main .tagline {
    display: flex;
    flex-direction: column;
-   ...
+   ...;
 }
 </code></pre>
 <h4>Conclusion</h4>

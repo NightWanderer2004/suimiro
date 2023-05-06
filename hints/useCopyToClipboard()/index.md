@@ -14,7 +14,7 @@ I found this very useful when you have a code section and you want to copy it to
 
 #### Coding
 
-```jsx
+```js
 import { useState } from "react";
 
 const useCopyToClipboard = () => {
@@ -47,7 +47,7 @@ export default useCopyToClipboard;
 
 #### Usage
 
-```jsx
+```js
 import { useCopyToClipboard } from ".../.../...";
 
 export default function Component() {

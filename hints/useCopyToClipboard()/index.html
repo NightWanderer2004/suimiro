@@ -11,6 +11,7 @@
       <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
       <link rel="manifest" href="/assets/site.webmanifest">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
       <link rel="stylesheet" href="/index.css" />
       <title>
          Suimiro | Copy to clipboard
@@ -50,7 +51,7 @@
 <h4>For what?</h4>
 <p>I found this very useful when you have a code section and you want to copy it to clipboard. It's usually a small button in right corner of code section.</p>
 <h4>Coding</h4>
-<pre><code class="language-jsx">import { useState } from &quot;react&quot;;
+<pre><code class="language-js">import { useState } from &quot;react&quot;;
 
 const useCopyToClipboard = () =&gt; {
    const [copiedText, setCopiedText] = useState(null);
@@ -79,7 +80,7 @@ export default useCopyToClipboard;
 </code></pre>
 <p><strong>Note:</strong> This hook is not supported in IE11 and below. Because of <em><strong>navigator.clipboard</strong></em> missing. If you want to support IE11, you can use <a href="https://clipboardjs.com/">clipboard.js</a>.</p>
 <h4>Usage</h4>
-<pre><code class="language-jsx">import { useCopyToClipboard } from &quot;.../.../...&quot;;
+<pre><code class="language-js">import { useCopyToClipboard } from &quot;.../.../...&quot;;
 
 export default function Component() {
    const [value, copy] = useCopyToClipboard();
