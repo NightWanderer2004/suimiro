@@ -16,7 +16,7 @@ Unlike Prettier, editorconfig is more suitable for plain text, and Prettier was 
 
 File .editorconfig can look like this:
 
-```
+```js
 root = true
 trim_trailing_whitespace = true
 
@@ -43,7 +43,7 @@ If you use Visual Studio Code and have Prettier installed, then in the editor se
 
 The same as a editorconfig, Prettier can be configured through the config file .prettierrc:
 
-```
+```js
 {
    "overrides": [
       {

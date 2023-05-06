@@ -73,6 +73,47 @@ body.dark .main.article a {
 body.dark .main.article pre {
    @apply bg-zinc-700/60;
 }
+body.dark .hljs-tag {
+   color: #79b8ff;
+}
+body.dark .hljs-attr {
+   color: #d4d4d4;
+}
+body.dark .hljs-attribute {
+   color: #c5a5c5;
+}
+body.dark .hljs-punctuation {
+   color: #d4d4d4;
+}
+body.dark .hljs-comment,
+body.dark .hljs-template-comment {
+   color: #6a737d;
+}
+body.dark .hljs-string,
+body.dark .hljs-template-string {
+   color: #b392f0;
+}
+body.dark .hljs-keyword {
+   color: #ff7b72;
+}
+body.dark .hljs-function {
+   color: #d4d4d4;
+}
+body.dark .hljs-built_in {
+   color: #79b8ff;
+}
+body.dark .hljs-number {
+   color: #ff7b72;
+}
+body.dark [class*="hljs-selector"] {
+   color: #ff7b72;
+}
+body.dark .hljs-property {
+   color: #79b8ff;
+}
+body.dark .hljs-value {
+   color: #b392f0;
+}
 body.dark .main.article em {
    @apply bg-zinc-700/60;
 }
