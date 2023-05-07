@@ -117,9 +117,6 @@ body.dark .hljs-value {
 body.dark .main.article em {
    @apply bg-zinc-700/60;
 }
-body.dark .main.article img {
-   @apply shadow-[3px_3px_rgba(229,229,229)];
-}
 
 /* Footer */
 body.dark .aside {
