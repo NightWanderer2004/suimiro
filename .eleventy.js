@@ -1,4 +1,12 @@
+const sitemap = require('@quasibit/eleventy-plugin-sitemap')
+
 module.exports = config => {
+   config.addPlugin(sitemap, {
+      sitemap: {
+         hostname: 'https://suimiro.me',
+      },
+   })
+
    config.addFilter('limit', (array, limit) => array.slice(0, limit))
 
    config.addPassthroughCopy('src/posts')
