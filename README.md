@@ -1,6 +1,6 @@
 # **Suimiro**
 
-## **[Link - Suimiro](https://suimiro.me/)**
+## **[Link - Suimiro](https://suimiro.netlify.app/)**
 
 ### Starting the development server - **`npm run dev`**
 
