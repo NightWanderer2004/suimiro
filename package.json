@@ -7,7 +7,7 @@
     "serve": "eleventy --serve",
     "css": "postcss ./src/styles/index.css -o ./dist/index.css -w",
     "build": "rm -rf dist && eleventy && postcss ./src/styles/index.css -o ./dist/index.css",
-    "spell": "yaspeller --only-errors -l 'en' *.md",
+    "spell": "yaspeller --only-errors -l 'en' *.md"
   },
   "yaspeller": {
     "dictionary": []
