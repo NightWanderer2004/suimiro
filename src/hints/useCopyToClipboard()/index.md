@@ -60,7 +60,7 @@ export default function Component() {
             <button onClick={() => copy("React")}>React</button>
             <button onClick={() => copy("JavaScript")}>JavaScript</button>
          </div>
-         <p>Copied value: {value ? "Nothing is copied yet!" : ""}</p>
+         <p>Copied value: {value ? value : "Nothing is copied yet!"}</p>
       </>
    );
 }
